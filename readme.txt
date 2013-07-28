@@ -4,4 +4,4 @@ Instructions:
 > Go to NGINX webroot (default: /usr/share/nginx/html)
 > Clone this repository - git clone git@github.com:smarigowda/d3js4jmeter.git
 > Test using Chrome web browser: ex: http://<your web server host name>/myCode/d3js/apdexCalc.html
-> mail me @ santosharakere@gmail.com
+> mail @ santosharakere@gmail.com
