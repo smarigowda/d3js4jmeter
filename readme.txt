@@ -1,7 +1,8 @@
 Instructions:
-> You need a web server. I use NGINX on Centos.
+> You need a web server. Ex: NGINX on Centos.
 > Instructions for installing NGINX on Centos - http://www.cyberciti.biz/faq/install-nginx-centos-rhel-6-server-rpm-using-yum-command/
 > Go to NGINX webroot (default: /usr/share/nginx/html)
-> Clone this repository - git clone git@github.com:smarigowda/d3js4jmeter.git
-> Test using Chrome web browser: ex: http://<your web server host name>/d3js4jmeter/apdexPlot.html
-> mail @ santosharakere@gmail.com
+> Clone this repository
+
+> store your data in data folder
+> ex: If your data file name is - test_001_aggregate_report.csv, use the follwing URL to generate a percentile response time bar plot 
