@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+rect:hover {
+        fill: orange;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.grid .tick {
+    stroke: lightgrey; opacity: 0.7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+</style>
+
+
+<body>
+<script src="../../js/d3.v3.min.js"></script>
+<script src="../../js/underscore.js"></script>
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<script>
+
+//code to plot the graph
+
+var gdata;
+
+//var format = d3.time.format("%H:%M:%S"); 
+
+var margin = {top: 20, right: 20, bottom: 400, left: 100},
+    width = 2000 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
+
+//var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
+    
+var x = d3.time.scale().range([0, width]);
+
+var y = d3.scale.linear().range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickFormat(d3.time.format("%Y-%m-%d"));
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    
+/*var line = d3.svg.line()
+    //.interpolate("basis")
+    .x(function(d) { return x(d.timeStamp); })
+    .y(function(d) { return y(d.elapsed); });*/
+
+// get the file name from URL
+// aggregate_report3.csv
+var file_name = GetUrlValue('file_name');
+
+d3.csv("./data/".concat(file_name), function(data) {
+    
+        gdata = data;
+        
+		console.log('csv data read:');
+        // data is an array of objects
+        //console.log(data);  // future modifications will get reflected into the console.log
+        
+        // convert time stamp to number
+        data.map(function(d) { d.timeStamp = +d.timeStamp; });
+        data.map(function(d) { d.elapsed = +d.elapsed; });
+        
+        console.log(data);
+        // set the x scale domain
+        //console.log(d3.extent(data.map(function(d) {return d.timeStamp;})));
+        //var maxdt = d3.max(data.map(function(d) {return d.timeStamp;}));
+        //console.log(maxdt);
+        //var mindt = d3.min(data.map(function(d) {return d.timeStamp;}));
+        //x.domain([new Date(maxdt), new Date(mindt)]);
+        //x.domain([mindt, maxdt]);
+        x.domain(d3.extent(data.map(function(d) {return d.timeStamp;})))
+        //x.rangeRound([margin, w - 10]); 
+        
+        console.log("x.domain()")
+        console.log(x.domain());
+        
+        console.log("x.range()")
+        console.log(x.range());
+        
+        // console.log(x(new Date(0)));
+        
+        // set y domain
+        y.domain(d3.extent(data.map(function(d){return d.elapsed;})))
+        
+        console.log(y.domain());
+        
+        var svg = d3.select("body").append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // draw x axis          
+    svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+      
+    // draw y axis
+    svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+      
+    /*svg.append("path")
+      .attr("class", "line")
+      .attr("d", line(data));
+      //.style("stroke", function(d) { return color(d.name); });*/
+    
+    // scatter plot
+    svg.selectAll("scatter-dots")
+        .data(data)
+        .enter().append("svg:circle")
+        .attr("cy", function (d) { return y(d.elapsed); } )
+        .attr("cx", function (d) { return x(d.timeStamp); } ) 
+        .attr("r", 5)
+        .style("opacity", 0.3); 
+
+});
+
+// A function to get the value of a key from query string
+function GetUrlValue(VarSearch){
+    var SearchString = window.location.search.substring(1);
+    var VariableArray = SearchString.split('&');
+    // loop through each of the URL parameters, split and check
+    for(var i = 0; i < VariableArray.length; i++){
+        var KeyValuePair = VariableArray[i].split('=');
+        if(KeyValuePair[0] == VarSearch){
+            return KeyValuePair[1];
+        }
+    }
+}
+
+</script>

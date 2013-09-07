@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+    <title>Test Suite</title>
+    
+    <style>
+      #results li.pass { color: green; }
+      #results li.fail { color: red; }
+    </style>
+
+</head>
+
+<body>
+
+<h1><b> This is my web page </b></h1>
+<ul id="results"></ul>
+
+<script src="./js/assert.js"></script>
+
+<script>
+
+var outerValue = 'ninja';
+var later;
+
+function outerFunction() {
+
+    var innerValue = 'samurai';
+ 
+   function innerFunction() {
+
+      assert(outerValue,"I can see the ninja.");
+      assert(innerValue,"I can see the samurai.");
+
+   }
+   
+   later = innerFunction;
+
+}	
+
+outerFunction();
+
+later();
+
+</script>
+
+</body>
+
+</html>

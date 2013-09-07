@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+    p {color: red}
+
+</style>
+
+<body>
+	
+<script src="../../js/d3.v3.min.js"></script>
+<script src="../../js/underscore.js"></script>
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<div id="example3">
+    <p>Existing Para 1</p>
+    <p>Existing Para 2</p>
+</div>
+
+<script>
+
+	var data = [10, 20, 30, 40, 50];
+    var divselection = d3.selectAll("#example3");
+    //var selp = divselection.selectAll("p").data(data); // for existing elements the data is bound, using array index as key (0, 1)
+    var selpwithkey = divselection.selectAll("p").data(data, function(d) {return d} ); // note that existing p elements are not in update selection!
+    console.log(selpwithkey.enter());
+    console.log(selpwithkey.enter().append("p").text(function(d) {return d}));
+    console.log(selpwithkey.enter());
+    
+    //console.log(selp) // update selection
+    //console.log(selp.enter()) // enter selection, observe the array indexes (2, 3, 4)
+    //selp.enter().append("p").text(function(d) {return d}); // append new elements
+    console.log(selpwithkey);
+    
+    //d3.selectAll("p").remove();
+    
+</script>
+
+</body>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://underscorejs.org/underscore.js"></script>
+
+<script>
+
+var testResults;
+var elapsedTime = [ ];
+var finalApdex = [ ];
+var apdexT = 10000000;
+var apdexFourT = apdexT * 4;
+var apdexTable = [ ];
+var d3jsentries;
+
+//d3.csv("./data/aggregate_report3.csv", function(data) {
+d3.csv("./data/filt_nmel_access_log.app6.26072013.csv", function(data) {
+	
+              	testResults = data;	
+		console.log('csv data in d3js');
+              	console.log(testResults);
+              	//console.log(testResults[0].label);
+              	
+              	// pluck the label only
+              	var labels = _.pluck(data, 'label');
+              	console.log(labels);
+		uniqlabels = _.uniq(labels);
+		console.log(uniqlabels);
+		
+		// for each uniq label, construct an array. Initialise apdex counters and index.
+		_.each(uniqlabels, function(label) {
+			console.log(label);
+			//apdexTable.push({ label: label, sCount: 0, tCount: 0, fCount: 0});
+			apdexTable[label] = { sCount: 0, tCount: 0, fCount: 0, totalCount: 0, apdexIndex: 0 };
+		});
+		
+		// Count of Satisfied, Tolerated and Frustrated.
+		_.each(testResults, function(row) { 
+
+					// console.log(row.label); 
+					var domain;
+
+					apdexTable[row.label].totalCount++;
+
+					if (+row.elapsed > apdexFourT) { 
+						domain = "F"; 
+						apdexTable[row.label].fCount++; 
+					} else if (+row.elapsed <= apdexT) { 
+						domain = "S";
+						apdexTable[row.label].sCount++; 
+					} else { 
+						domain = "T";
+						apdexTable[row.label].tCount++;
+					};
+
+					elapsedTime.push( {label: row.label, elapsed: +row.elapsed, apdexdomain: domain} ) 			
+
+		});
+	
+		console.log('apdexTable');	
+		console.log(apdexTable);
+
+		console.log('calculate apdexIndex');
+		_.each(d3.keys(apdexTable), function(d) {
+			console.log(d);
+			console.log(apdexTable[d].apdexIndex = ( (apdexTable[d].sCount + (apdexTable[d].tCount/2)) / apdexTable[d].totalCount ) );
+		});
+		
+		console.log(apdexTable);
+
+		//console.log(d3.values(apdexTable));
+		d3jsentries = d3.entries(apdexTable);
+		console.log(d3jsentries);
+
+console.log('apdexIndex bar plot');
+
+var margin = {top: 20, right: 20, bottom: 400, left: 35},
+    width = 9500 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+x.domain(d3jsentries.map(function(d) { return d.key; }));
+y.domain([0, d3.max(d3jsentries, function(d) { return +d.value.apdexIndex; })]);
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+svg.selectAll(".axis text")  // select all the text elements for the xaxis
+	.style("text-anchor", "end")
+	.attr("transform", function(d) {
+		return "translate(" + this.getBBox().height*-1.5 + "," + this.getBBox().height + ")rotate(-65)";
+	});
+
+svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 2)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("apdexIndex");
+
+svg.selectAll(".bar")
+      .data(d3jsentries)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.key); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.value.apdexIndex); })
+      .attr("height", function(d) { return height - y(d.value.apdexIndex); });
+
+});
+</script>

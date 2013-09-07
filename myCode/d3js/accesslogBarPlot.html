@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+rect:hover {
+        fill: orange;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://underscorejs.org/underscore.js"></script>
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<script>
+
+var testResults;
+var elapsedTime = [ ];
+var finalApdex = [ ];
+var apdexT = 10000000;
+var apdexFourT = apdexT * 4;
+var apdexTable = [ ];
+var d3jsentries;
+
+// get the file name from URL
+// aggregate_report3.csv
+var file_name = GetUrlValue('file_name');
+d3.csv("./data/".concat(file_name), function(data) {
+//d3.csv("./data/filt_nmel_access_log.app6.26072013.csv", function(data) {
+	
+              	testResults = data;	
+		console.log('csv data in d3js');
+              	console.log(testResults);
+		
+		console.log('grouped by label, and average of elapsed time for each label')
+		groupbyLabel = d3.nest()
+				 .key(function(d) { return d.label; })
+				 .sortKeys(d3.ascending)
+				 .rollup(function(d) { 
+					//console.log('data inside nest')
+					//console.log(d.length);
+					//var index1 = Math.round((d.length * 90)/100);
+					//console.log(Math.round((d.length * 90)/100));
+					//console.log(d[0].label);
+					//console.log('index =');
+					//console.log(index1);
+					//console.log(d[index1 - 1].elapsed);
+					//console.log(d);
+					//console.log(_.pluck(d, 'elapsed'));
+					return { 
+						 avg_elapsed: d3.mean(d, function(g) { return +g.elapsed; }),
+						 percentile90: d3.quantile(_.pluck(d, 'elapsed'), 0.9)
+				        }
+				 })
+				 .entries(data);
+
+		console.log('groupbyLabel');
+		console.log(groupbyLabel);
+		
+
+		//console.log('csv data in d3js');
+              	//console.log(testResults);
+              	//console.log(testResults[0].label);
+              	
+              	// pluck the label only
+              	var labels = _.pluck(data, 'label');
+              	//console.log(labels);
+		uniqlabels = _.uniq(labels);
+		//console.log(uniqlabels);
+		
+		// for each uniq label, construct an array. Initialise apdex counters and index.
+		_.each(uniqlabels, function(label) {
+			//console.log(label);
+			//apdexTable.push({ label: label, sCount: 0, tCount: 0, fCount: 0});
+			apdexTable[label] = { sCount: 0, tCount: 0, fCount: 0, totalCount: 0, apdexIndex: 0 };
+
+			// pluck elapsed time for each label
+			
+		});
+		
+		// Count of Satisfied, Tolerated and Frustrated.
+		_.each(testResults, function(row) { 
+
+					// console.log(row.label); 
+					var domain;
+
+					apdexTable[row.label].totalCount++;
+
+					if (+row.elapsed > apdexFourT) { 
+						domain = "F"; 
+						apdexTable[row.label].fCount++; 
+					} else if (+row.elapsed <= apdexT) { 
+						domain = "S";
+						apdexTable[row.label].sCount++; 
+					} else { 
+						domain = "T";
+						apdexTable[row.label].tCount++;
+					};
+
+					elapsedTime.push( {label: row.label, elapsed: +row.elapsed, apdexdomain: domain} ) 			
+
+		});
+
+		console.log(elapsedTime);
+	
+		//console.log('apdexTable');	
+		//console.log(apdexTable);
+
+		//console.log('calculate apdexIndex');
+		_.each(d3.keys(apdexTable), function(d) {
+			//console.log(d);
+			//console.log(apdexTable[d].apdexIndex = ( (apdexTable[d].sCount + (apdexTable[d].tCount/2)) / apdexTable[d].totalCount ) );
+		});
+		
+		//console.log(apdexTable);
+
+		//console.log(d3.values(apdexTable));
+		//d3jsentries = d3.entries(apdexTable);
+		d3jsentries = elapsedTime;
+		console.log('d3jsentries');
+		console.log(d3jsentries);
+		
+		//d3jsentries = groupbyLabel;
+		//console.log(d3jsentries);
+
+//console.log('apdexIndex bar plot');
+
+// code to plot the graph
+
+var margin = {top: 20, right: 20, bottom: 400, left: 100},
+    width = 1000 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+x.domain(groupbyLabel.map(function(d) { return d.key; }));
+y.domain([0, d3.max(groupbyLabel, function(d) { return +d.values.percentile90; })]);
+
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+svg.selectAll(".axis text")  // select all the text elements for the xaxis
+	.style("text-anchor", "end")
+	.attr("transform", function(d) {
+		return "translate(" + this.getBBox().height*-1.5 + "," + this.getBBox().height + ")rotate(-65)";
+	});
+
+svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 2)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("elapsed response time");
+
+svg.selectAll(".bar")
+      .data(groupbyLabel)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.key); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.values.percentile90); })
+      .attr("height", function(d) { return height - y(d.values.percentile90); });
+
+});
+
+// A function to get the value of a key from query string
+function GetUrlValue(VarSearch){
+    var SearchString = window.location.search.substring(1);
+    var VariableArray = SearchString.split('&');
+    for(var i = 0; i < VariableArray.length; i++){
+        var KeyValuePair = VariableArray[i].split('=');
+        if(KeyValuePair[0] == VarSearch){
+            return KeyValuePair[1];
+        }
+    }
+}
+
+
+
+</script>

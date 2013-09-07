@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <title>Test Suite</title>
+    
+    <style>
+      #results li.pass { color: green; }
+      #results li.fail { color: red; }
+    </style>
+
+</head>
+
+<body>
+
+<h1><b> This is my web page </b></h1>
+<ul id="results"></ul>
+<div id="testSubject"></div>
+<button type="button" id="testButton">Go!</button>
+<script src="./js/assert.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+    
+    jQuery('#testButton').click(function(){
+
+	var elem$ = jQuery("#testSubject");
+	
+	elem$.html("Loading...");
+	
+	jQuery.ajax({
+	    url: "index.html",
+	    success: function(html){
+		assert(elem$, "We can see elem$, via the closure for this callback.");
+		elem$.html(html);
+	    }
+	});
+	
+    });
+	
+
+</script>
+
+</body>
+
+</html>

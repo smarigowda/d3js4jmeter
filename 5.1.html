@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+    <title>Test Suite</title>
+    
+    <style>
+      #results li.pass { color: green; }
+      #results li.fail { color: red; }
+    </style>
+
+</head>
+
+<body>
+
+<h1><b> This is my web page </b></h1>
+<ul id="results"></ul>
+
+<script src="./js/assert.js"></script>
+
+<script>
+	var outerValue = 'ninja';
+	
+	function outerFunction() {
+    		assert(outerValue == "ninja","I can see the ninja.");
+	}
+	
+	outerFunction();
+</script>
+
+</body>
+
+</html>

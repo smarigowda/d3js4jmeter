@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+
+<style>
+pre {
+    font-family:Consolas, monospace;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>nMEL 2.6.15 Test Results - Dashboard</h1>
+<h4><font color=blue>JMeter Instance 1: ec2-54-228-131-39.eu-west-1.compute.amazonaws.com</font></h4>
+<h4><font color=blue>JMeter Instance 2: ec2-54-228-106-32.eu-west-1.compute.amazonaws.com</font></h4>
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_001_all_aggregate_for_analysis.csv" target="_blank">Test_001: A Bseline Test, 1 Class, 10 Students, Session Length = 28 min, JMeter 1</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/0B8flWcQS4BXmNXNqZjhWUnhvdkE" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 02-Sep-2013
+Test Start: 12:30:25 BST
+Test End: 12:58:28 BST
+Total Test Duration: 0:28:03 (HH:MM:SS)
+</pre>
+
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_002_all_aggregate_for_analysis.csv" target="_blank">Test_002: A Bseline Test, 1 Class, 10 Students, Session Length = 28 min, JMeter 2</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/0B8flWcQS4BXmcjFObnFVLTJKZ2M" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 02-Sep-2013
+Test Start: 13:42:44 BST
+Test End: 14:10:48 BST
+Total Test Duration: 0:28:04 (HH:MM:SS)
+</pre>
+
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_003_all_aggregate_for_analysis.csv" target="_blank">Test_003: A Bseline Test, 2 Classes, 20 Students, Session Length = 28 min, JMeter 1 and JMeter 2, One Class Per JMeter Instance</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/0B8flWcQS4BXmVF9GZDBicV9XTzQ" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 02-Sep-2013
+Test Start: 14:55:13 BST
+Test End: 15:25:18 BST
+Total Test Duration: 0:30:05 (HH:MM:SS)
+</pre>
+
+
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_004_all_aggregate_for_analysis.csv" target="_blank">Test_004: Load  Test, 16 Classes, 160 Students, Session Length = 28 min, JMeter 1 and JMeter 2, 8 concurrent classes Per JMeter Instance for ONE HOUR Duration</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/0B8flWcQS4BXmTEpjbUtWRjRyR3c" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 02-Sep-2013
+Test Start: 16:05:13 BST
+Test End: 16:53:08 BST
+Total Test Duration: 0:47:55 (HH:MM:SS) 
+Observations in Rightscale:
+<font color=red>- All 4 App servers CPU usage is maxing out</font>
+<font color=red>- up to 40% of Steal CPU is observed</font>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/map?tw[end]=1378137900&tw[start]=1378134300" target="_blank">New Relic -Map View</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?tw[end]=1378137900&tw[start]=1378134300" target="_blank">New Relic - Page load time breakdown by page</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?tw%5Bend%5D=1378137900&tw%5Bstart%5D=1378134300#id=224308487&app_trace_id=1977423201" target="_blank">New Relic - Slowest Components</a>
+</pre>
+
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_005_all_aggregate_for_analysis.csv" target="_blank">Test_005: Load  Test, 16 Classes, 160 Students, Session Length = 28 min, Auto Scaling Enabled (Auto Scale During Test Exec)</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/0B8flWcQS4BXmUW5nWmtIbW9fd1k" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 03-Sep-2013
+Test Start: 10:50:13 BST
+Test End: 11:38:19 BST
+Total Test Duration: 0:48:06 (HH:MM:SS) 
+<!--
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/map?" target="_blank">New Relic -Map View</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?" target="_blank">New Relic - Page load time breakdown by page</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?" target="_blank">New Relic - Slowest Components</a>
+-->
+</pre>
+
+</br>
+<h2><a href="http://santosharakere.bitbucket.org/myCode/d3js/jmeterPlot.html?file_name=test_006_all_aggregate_for_analysis.csv" target="_blank">Test_006: Load  Test, 16 Classes, 160 Students, Session Length = 28 min, 6 APP Servers, Auto Scaling Disabled</a></h2>
+<h3><a href="https://drive.google.com/a/pearson.com/?tab=mo#folders/" target="_blank">JMeter Result Files in Google Drive</a></h3>
+<pre>
+Test Date: 03-Sep-2013
+Test Start: 13:52:14 BST
+Test End: 14:36:51 BST
+Total Test Duration: 0:44:37 (HH:MM:SS) 
+<!--
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/map?" target="_blank">New Relic -Map View</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?" target="_blank">New Relic - Page load time breakdown by page</a>
+<a href="https://rpm.newrelic.com/accounts/106857/applications/2336827/transactions?" target="_blank">New Relic - Slowest Components</a>
+-->
+</pre>
+
+</body>

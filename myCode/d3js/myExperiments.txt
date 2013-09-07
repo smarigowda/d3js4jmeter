@@ -1,0 +1,5 @@
+d3.csv("http://santosharakere.bitbucket.org/myCode/d3js/data/aggregate_report2.1.csv", function(data) { console.log(data) });
+d3.csv("http://10.150.120.90/santosharakere.bitbucket.org/myCode/d3js/data/aggregate_report2.1.csv", function(data) { console.log(data) });
+var mydata;
+d3.csv("http://10.150.120.90/santosharakere.bitbucket.org/myCode/d3js/data/aggregate_report2.1.csv", function(data) { mydata = data; console.log(data) });
+nest

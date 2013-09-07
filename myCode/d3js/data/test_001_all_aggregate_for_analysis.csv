@@ -1,0 +1,165 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount
+1378121425375,1655,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-1,,true,,10114,1,1,0,1,0
+1378121427280,7434,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-1,,true,,30877,1,1,0,1,0
+1378121442684,1111,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-2,,true,,10113,2,2,0,1,0
+1378121443822,6954,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-2,,true,,30911,2,2,0,1,0
+1378121460200,1182,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-3,,true,,10113,3,3,0,1,0
+1378121461412,7117,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-3,,true,,30905,3,3,0,1,0
+1378121477708,1113,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-4,,true,,10113,4,4,0,1,0
+1378121478847,7123,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-4,,true,,30909,4,4,0,1,0
+1378121495223,1231,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-5,,true,,10113,5,5,0,1,0
+1378121496480,6519,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-5,,true,,30910,5,5,0,1,0
+1378121512737,1100,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-6,,true,,10113,6,6,0,1,0
+1378121513859,6784,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-6,,true,,30901,6,6,0,1,0
+1378121530249,1313,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-7,,true,,10113,7,7,0,1,0
+1378121531584,6248,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-7,,true,,30903,7,7,0,1,0
+1378121547763,1079,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-8,,true,,10114,8,8,0,1,0
+1378121548865,6748,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-8,,true,,30930,8,8,0,1,0
+1378121565276,1069,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-9,,true,,10113,9,9,0,1,0
+1378121566366,7025,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-9,,true,,30933,9,9,0,1,0
+1378121582791,1185,SC05_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-10,,true,,10113,10,10,0,1,0
+1378121584000,6558,SC05_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-10,,true,,30936,10,10,0,1,0
+1378121743657,1417,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-1,,true,,8984,10,10,0,1,0
+1378121746847,1230,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-2,,true,,8981,10,10,0,1,0
+1378121749817,1338,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-3,,true,,8980,10,10,0,1,0
+1378121752689,1241,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-4,,true,,8985,10,10,0,1,0
+1378121755822,1314,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-5,,true,,8985,10,10,0,1,0
+1378121758849,1272,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-6,,true,,8977,10,10,0,1,0
+1378121761839,1409,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-7,,true,,8984,10,10,0,1,0
+1378121764848,1305,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-8,,true,,8984,10,10,0,1,0
+1378121767820,1467,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-9,,true,,8983,10,10,0,1,0
+1378121770830,1564,SC05_04_Click_Open_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-10,,true,,8984,10,10,0,1,0
+1378121927936,2589,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-1,,true,,10331,10,10,0,1,0
+1378121933552,1469,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-1,,true,,6369,10,10,0,1,0
+1378121933697,2798,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-2,,true,,10334,9,9,0,1,0
+1378121940353,3090,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-3,,true,,10330,9,9,0,1,0
+1378121942522,1270,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-2,,true,,6368,9,9,0,1,0
+1378121945304,2849,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-4,,true,,10332,8,8,0,1,0
+1378121952471,1507,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-3,,true,,6369,8,8,0,1,0
+1378121952555,2960,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-5,,true,,10331,7,7,0,1,0
+1378121957556,2428,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-6,,true,,10332,7,7,0,1,0
+1378121960184,1086,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-4,,true,,6368,7,7,0,1,0
+1378121964282,2601,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-7,,true,,10337,6,6,0,1,0
+1378121970539,1435,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-5,,true,,6369,6,6,0,1,0
+1378121970347,2602,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-8,,true,,10334,5,5,0,1,0
+1378121978009,1109,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-6,,true,,6368,5,5,0,1,0
+1378121976820,2734,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-9,,true,,10333,4,4,0,1,0
+1378121982509,2485,SC05_05_Submit_EX1,200,"Number of samples in transaction : 2, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-10,,true,,10330,4,4,0,1,0
+1378121987910,1386,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-7,,true,,6369,4,4,0,1,0
+1378121996976,1196,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-8,,true,,6368,3,3,0,1,0
+1378122006580,1301,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-9,,true,,6369,2,2,0,1,0
+1378122015022,1120,SC05_10_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC05 - All Students Take Activity in Course -   10 1-10,,true,,6368,1,1,0,1,0
+1378122016185,1132,SC02_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,10114,1,1,0,1,0
+1378122017336,8827,SC02_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,30517,1,1,0,1,0
+1378122026191,3247,SC06_02_Click_GradeBook,200,"Number of samples in transaction : 4, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,32636,1,1,0,1,0
+1378122099643,2313,SC06_03_Click_Student_Name,200,"Number of samples in transaction : 3, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,23429,1,1,0,1,0
+1378122101975,545,SC06_04_Click_UNIT9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,2016,1,1,0,1,0
+1378122102525,679,SC06_05_Expand_WorldOfWork,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,2196,1,1,0,1,0
+1378122103209,614,SC06_06_Expand_Grammar,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,2196,1,1,0,1,0
+1378122163714,1490,SC02_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,12864,1,1,0,1,0
+1378122165218,1281,SC07_01_Home,200,"Number of samples in transaction : 3, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,18984,1,1,0,1,0
+1378122166509,706,SC02_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,9814,1,1,0,1,0
+1378122167225,8723,SC02_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,35982,1,1,0,1,0
+1378122175979,3373,SC07_03_Click_Gradebook,200,"Number of samples in transaction : 4, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,35084,1,1,0,1,0
+1378122179375,532,SC07_04_Click_Diagnostics_Click_Time_Student,200,"Number of samples in transaction : 1, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,631,1,1,0,1,0
+1378122249730,1530,SC02_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC06 and SC07 - Grade Book and Diagnostics 2-1,,true,,12865,1,1,0,1,0
+1378122251289,1137,SC08_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,10113,1,1,0,1,0
+1378122252498,9032,SC08_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,30512,1,1,0,1,0
+1378122261556,2366,SC08_02_Click_GradeBook,200,"Number of samples in transaction : 4, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,23312,1,1,0,1,0
+1378122263942,563,SC08_03_Expand_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,2290,1,1,0,1,0
+1378122264510,552,SC08_04_Expand_WorldOfWork,200,"Number of samples in transaction : 1, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,2290,1,1,0,1,0
+1378122265067,460,SC08_05_Expand_Grammar,200,"Number of samples in transaction : 1, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,2288,1,1,0,1,0
+1378122265532,451,SC08_06_Click_Exercise_1,200,"Number of samples in transaction : 1, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,6015,1,1,0,1,0
+1378122265988,1658,SC08_07_Click_CommonErrorReport,200,"Number of samples in transaction : 2, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,9196,1,1,0,1,0
+1378122372656,5221,SC08_08_Click_Accept,200,"Number of samples in transaction : 2, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,12963,1,1,0,1,0
+1378122465195,1359,SC02_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC08 - Common Error Report 3-1,,true,,12864,1,1,0,1,0
+1378122466602,1093,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,10114,1,1,0,1,0
+1378122467718,7002,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,30612,1,1,0,1,0
+1378122484127,1005,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,10113,2,2,0,1,0
+1378122485152,6277,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,30609,2,2,0,1,0
+1378122501650,982,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,10113,3,3,0,1,0
+1378122502650,6445,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,30609,3,3,0,1,0
+1378122519172,1018,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,10113,4,4,0,1,0
+1378122520211,6377,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,30604,4,4,0,1,0
+1378122536726,1061,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,10113,5,5,0,1,0
+1378122537805,6990,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,30607,5,5,0,1,0
+1378122554250,1024,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,10113,6,6,0,1,0
+1378122555293,6701,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,30605,6,6,0,1,0
+1378122571772,1196,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,10113,7,7,0,1,0
+1378122572986,6762,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,30619,7,7,0,1,0
+1378122589294,1138,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,10113,8,8,0,1,0
+1378122590450,6696,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,30605,8,8,0,1,0
+1378122606815,1187,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,10113,9,9,0,1,0
+1378122608021,6621,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,30602,9,9,0,1,0
+1378122624336,1162,SC10_01_nMEL_HomePage,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,10113,10,10,0,1,0
+1378122625517,6661,SC10_02_nMEL_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,30616,10,10,0,1,0
+1378122755346,3090,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,17960,10,10,0,1,0
+1378122758350,3023,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,17958,10,10,0,1,0
+1378122761466,1708,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,5031,10,10,0,1,0
+1378122761183,3174,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,17958,10,10,0,1,0
+1378122764315,3115,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,17961,10,10,0,1,0
+1378122767403,2135,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,5030,10,10,0,1,0
+1378122766190,3445,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,49945,10,10,0,1,0
+1378122767443,2937,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,17965,10,10,0,1,0
+1378122770259,3039,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,17966,10,10,0,1,0
+1378122773386,1779,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,5031,10,10,0,1,0
+1378122772990,2908,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,17958,10,10,0,1,0
+1378122775556,3177,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,49957,10,10,0,1,0
+1378122776189,2967,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,17961,10,10,0,1,0
+1378122779459,1696,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,5030,10,10,0,1,0
+1378122779153,3268,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,17956,10,10,0,1,0
+1378122782563,3183,SC10_02_Click_Course_TAB,200,"Number of samples in transaction : 4, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,17962,10,10,0,1,0
+1378122785411,1876,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,5031,10,10,0,1,0
+1378122784183,3211,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,49959,10,10,0,1,0
+1378122791332,1595,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,5031,10,10,0,1,0
+1378122793176,3374,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,49954,10,10,0,1,0
+1378122796931,1866,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,5030,10,10,0,1,0
+1378122803188,1769,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,5031,10,10,0,1,0
+1378122802308,3206,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,49958,10,10,0,1,0
+1378122809452,1918,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,5029,10,10,0,1,0
+1378122810946,3207,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,49942,10,10,0,1,0
+1378122815813,1476,SC10_03_Click_Unit9,200,"Number of samples in transaction : 1, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,5032,10,10,0,1,0
+1378122819877,3200,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,49960,10,10,0,1,0
+1378122828975,3370,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,49945,10,10,0,1,0
+1378122832682,3431,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,50187,10,10,0,1,0
+1378122839192,1447,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,4547,10,10,0,1,0
+1378122838388,3259,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,49948,10,10,0,1,0
+1378122843663,1872,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,41025,10,10,0,1,0
+1378122844979,3428,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,50179,10,10,0,1,0
+1378122847308,3098,SC10_04_Open_Grammar_Practice_Ex1,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,49955,10,10,0,1,0
+1378122854449,1569,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,4553,10,10,0,1,0
+1378122856823,3744,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,50185,10,10,0,1,0
+1378122862040,1766,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,41026,10,10,0,1,0
+1378122869608,1430,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,4547,10,10,0,1,0
+1378122868232,3595,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,50177,10,10,0,1,0
+1378122880062,1701,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,41025,10,10,0,1,0
+1378122880813,3490,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,50173,10,10,0,1,0
+1378122883871,1407,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,4548,10,10,0,1,0
+1378122892094,3388,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,50183,10,10,0,1,0
+1378122897300,1860,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,41028,10,10,0,1,0
+1378122899345,1544,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,4547,10,10,0,1,0
+1378122904196,3399,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,50192,10,10,0,1,0
+1378122913523,1465,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,4546,10,10,0,1,0
+1378122915910,1800,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,41015,10,10,0,1,0
+1378122916414,3765,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,50194,10,10,0,1,0
+1378122919108,1899,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-1,,true,,12864,10,10,0,1,0
+1378122928648,1896,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,4555,9,9,0,1,0
+1378122928693,3254,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,50181,9,9,0,1,0
+1378122933012,1758,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,41028,9,9,0,1,0
+1378122939230,1992,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-2,,true,,12865,9,9,0,1,0
+1378122940685,3757,SC10_05_Submit,200,"Number of samples in transaction : 6, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,50187,8,8,0,1,0
+1378122944223,1385,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,4547,8,8,0,1,0
+1378122951566,1717,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,41020,8,8,0,1,0
+1378122958989,1489,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,4548,8,8,0,1,0
+1378122960493,2106,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-3,,true,,12865,8,8,0,1,0
+1378122969629,1964,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,41020,7,7,0,1,0
+1378122974484,1705,SC10_06_BackToCourse,200,"Number of samples in transaction : 2, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,4546,7,7,0,1,0
+1378122981526,2000,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-4,,true,,12864,7,7,0,1,0
+1378122987504,1889,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,41021,6,6,0,1,0
+1378123002542,2058,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-5,,true,,12865,6,6,0,1,0
+1378123006211,2141,SC10_07_View_Report,200,"Number of samples in transaction : 5, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,41026,5,5,0,1,0
+1378123022934,2228,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-6,,true,,12864,5,5,0,1,0
+1378123044542,1980,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-7,,true,,12865,4,4,0,1,0
+1378123065859,1965,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-8,,true,,12865,3,3,0,1,0
+1378123086680,2071,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-9,,true,,12865,2,2,0,1,0
+1378123108887,2051,SC10_08_nMEL_Logout,200,"Number of samples in transaction : 3, number of failing samples : 0",SC10 - Student Takes Practice Test -  10 4-10,,true,,12864,1,1,0,1,0
