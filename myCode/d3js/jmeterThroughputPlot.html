@@ -78,21 +78,19 @@ d3.csv("./data/".concat(file_name), function(data) {
                  // for each group of label perform the below group wise computation
 				 .rollup(function(d) {
 
-                    // d is an array of objects (for each label)
-                    // console.log("d inside nest");
-                    // console.log(d);
-
-                    // label is same for each of the objects inside the array
-                    // because its grouped by label
-                    // console.log(d[0].label);
-                    // console.log(d.length);
-                    // pluck works on each element of data d
-                    // console.log(_.pluck(d, 'elapsed').map(function(d2) {return +d2}).sort(d3.ascending));
-                    
-                    // count of samples for each uniq time stamp
-                    return { throughput: d.length }
-                    
-                   
+			                    // d is an array of objects (for each label)
+			                    // console.log("d inside nest");
+			                    // console.log(d);
+			
+			                    // label is same for each of the objects inside the array
+			                    // because its grouped by label
+			                    // console.log(d[0].label);
+			                    // console.log(d.length);
+			                    // pluck works on each element of data d
+			                    // console.log(_.pluck(d, 'elapsed').map(function(d2) {return +d2}).sort(d3.ascending));
+			                    
+			                    // count of samples for each uniq time stamp
+			                    return { throughput: d.length }
 				 })
 				 .entries(data);
 
