@@ -117,8 +117,6 @@ x.domain(d3.extent(groupbyTimeStamp.map(function(d) { return +d.key; })))
 // set y domain
 y.domain(d3.extent(groupbyTimeStamp.map(function(d){return d.values.throughput;})))
     
-    
-
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
@@ -152,8 +150,6 @@ var yAxis = d3.svg.axis()
             console.log(this.getBBox());
 		    return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(-90)"; })
 		    //console.log(this.getBBox());
-            //return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(0)"; */
-
         
     // draw y axis
     svg.append("g")
@@ -176,9 +172,7 @@ var yAxis = d3.svg.axis()
         .style("opacity", 0.3)
         .append("title").text(function(d){ return d.values.throughput; });
 
-    
-    
-});
+}); // end for d3.csv
 
 // A function to get the value of a key from the URL query string
 function GetUrlValue(VarSearch){
