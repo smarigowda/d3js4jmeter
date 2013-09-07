@@ -1,0 +1,8 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount
+1378588241080,8344,VF_Main_Page,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Recording 1-1,,true,355437,1,1,0,1,0
+1378588249463,1744,Click_Login,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Recording 1-1,,true,86379,1,1,0,1,0
+1378588251214,31084,Login_NOW,200,"Number of samples in transaction : 9, number of failing samples : 0",Thread Group - Recording 1-1,,true,463851,1,1,0,1,0
+1378588282317,7697,Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Recording 1-1,,true,63886,1,1,0,1,0
+1378588290016,11730,Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Recording 1-1,,true,109706,1,1,0,1,0
+1378588301750,5303,Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Recording 1-1,,true,50114,1,1,0,1,0
+1378588307056,1344,Click_Logout,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group - Recording 1-1,,true,45120,1,1,0,1,0
