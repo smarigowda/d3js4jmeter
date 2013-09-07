@@ -56,7 +56,8 @@ var gdata;
 // get the file name from URL
 // aggregate_report3.csv
 var file_name = GetUrlValue('file_name');
-d3.csv("./data/".concat(file_name), function(data) {
+var folder_name = GetUrlValue('folder_name');
+d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
 		console.log('csv data read');
         
 
