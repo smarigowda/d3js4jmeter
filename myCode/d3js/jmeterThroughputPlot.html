@@ -78,21 +78,19 @@ d3.csv("./data/".concat(file_name), function(data) {
                  // for each group of label perform the below group wise computation
 				 .rollup(function(d) {
 
-                    // d is an array of objects (for each label)
-                    // console.log("d inside nest");
-                    // console.log(d);
-
-                    // label is same for each of the objects inside the array
-                    // because its grouped by label
-                    // console.log(d[0].label);
-                    // console.log(d.length);
-                    // pluck works on each element of data d
-                    // console.log(_.pluck(d, 'elapsed').map(function(d2) {return +d2}).sort(d3.ascending));
-                    
-                    // count of samples for each uniq time stamp
-                    return { throughput: d.length }
-                    
-                   
+			                    // d is an array of objects (for each label)
+			                    // console.log("d inside nest");
+			                    // console.log(d);
+			
+			                    // label is same for each of the objects inside the array
+			                    // because its grouped by label
+			                    // console.log(d[0].label);
+			                    // console.log(d.length);
+			                    // pluck works on each element of data d
+			                    // console.log(_.pluck(d, 'elapsed').map(function(d2) {return +d2}).sort(d3.ascending));
+			                    
+			                    // count of samples for each uniq time stamp
+			                    return { throughput: d.length }
 				 })
 				 .entries(data);
 
@@ -119,8 +117,6 @@ x.domain(d3.extent(groupbyTimeStamp.map(function(d) { return +d.key; })))
 // set y domain
 y.domain(d3.extent(groupbyTimeStamp.map(function(d){return d.values.throughput;})))
     
-    
-
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
@@ -154,8 +150,6 @@ var yAxis = d3.svg.axis()
             console.log(this.getBBox());
 		    return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(-90)"; })
 		    //console.log(this.getBBox());
-            //return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(0)"; */
-
         
     // draw y axis
     svg.append("g")
@@ -178,9 +172,7 @@ var yAxis = d3.svg.axis()
         .style("opacity", 0.3)
         .append("title").text(function(d){ return d.values.throughput; });
 
-    
-    
-});
+}); // end for d3.csv
 
 // A function to get the value of a key from the URL query string
 function GetUrlValue(VarSearch){
