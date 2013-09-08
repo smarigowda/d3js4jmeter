@@ -4435,7 +4435,7 @@
           <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         </CookieManager>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -4467,7 +4467,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -10296,7 +10296,7 @@ goog-phish-shavar;a:290912-295415:s:140167-143776:mac&#xd;
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -10328,7 +10328,7 @@ goog-phish-shavar;a:290912-295415:s:140167-143776:mac&#xd;
           <stringProp name="filename">/Users/roopasantu/SAN/GitHub/d3js4jmeter/vf/jmeter/results/${__time(yyyyMMdd_HHmmss)}/single_user_3itn_vrtree.jtl</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -10407,8 +10407,8 @@ goog-phish-shavar;a:290912-295415:s:140167-143776:mac&#xd;
             <assertions>true</assertions>
             <subresults>true</subresults>
             <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
             <fieldNames>false</fieldNames>
             <responseHeaders>false</responseHeaders>
             <requestHeaders>false</requestHeaders>
@@ -10416,9 +10416,11 @@ goog-phish-shavar;a:290912-295415:s:140167-143776:mac&#xd;
             <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/Users/roopasantu/SAN/GitHub/d3js4jmeter/vf/jmeter/results/${__time(yyyyMMdd_HHmmss)}/single_user_3itn_vrtree.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
@@ -10450,7 +10452,7 @@ goog-phish-shavar;a:290912-295415:s:140167-143776:mac&#xd;
             <bytes>true</bytes>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/Users/roopasantu/SAN/GitHub/d3js4jmeter/vf/jmeter/results/${__time(yyyyMMdd_HHmmss)}/single_user_3itn_agg_report.csv</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+rect:hover {
+        fill: orange;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: black;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.grid .tick {
+    stroke: lightgrey; opacity: 0.7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+</style>
+
+
+<body>
+<script src="/d3js4jmeter/js/d3.v3.min.js"></script>
+<script src="/d3js4jmeter/js/underscore.js"></script>
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<script>
+
+var gdata;
+var results;
+
+// get the file name from URL
+// aggregate_report3.csv
+var file_name = GetUrlValue('file_name');
+var folder_name = GetUrlValue('folder_name');
+d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
+		console.log('csv data read');
+        
+        gdata = data;
+        
+        console.log(data); // an array of objects, type of Document
+        // gdata.__proto__; // Document
+
+        //results = d3.select(gdata).selectAll("*")
+        results2 = d3.select(gdata).selectAll("httpSample")[0]; // an array of all http samples
+        
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 2000})
+        
+        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) {console.log(d.attributes.lb.value); return d.attributes.lb.value;})
+        
+        //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) {/*console.log(d.attributes.lb.value);*/ return d.attributes.t.value;})
+        
+        
+});
+
+
+// A function to get the value of a key from the URL query string
+function GetUrlValue(VarSearch){
+    var SearchString = window.location.search.substring(1);
+    var VariableArray = SearchString.split('&');
+    // loop through each of the URL parameters, split and check
+    for(var i = 0; i < VariableArray.length; i++){
+        var KeyValuePair = VariableArray[i].split('=');
+        if(KeyValuePair[0] == VarSearch){
+            return KeyValuePair[1];
+        }
+    }
+}
+
+</script>
