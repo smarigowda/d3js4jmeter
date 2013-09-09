@@ -62,11 +62,20 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         //results = d3.select(gdata).selectAll("*")
         results2 = d3.select(gdata).selectAll("httpSample")[0]; // an array of all http samples
         
-        results = _.filter(results2, function(d) {return d.attributes.t.value > 2000})
+        results3 = d3.select(gdata).selectAll("sample")[0]; // an array of all samples
         
-        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) {console.log(d.attributes.lb.value); return d.attributes.lb.value;})
+        console.log(results3);
         
-        //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) {/*console.log(d.attributes.lb.value);*/ return d.attributes.t.value;})
+        // results3.map(function(d) {return d.attributes.lb.value})
+        // results3.map(function(d) {return d.attributes.t.value})
+        
+        console.log(results2);
+        
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 200})
+        
+        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value; })
+        
+        //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.t.value; })
         
         
 });
