@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+    <title>Test Suite</title>
+    
+    <style>
+    </style>
+
+</head>
+
+<body>
+
+
+
+<script src="../js/miso.ds.deps.min.0.3.0.js"></script>
+
+<script>
+
+/* var data = [
+  { color : "red",   r : 255, g : 0,   b : 0   },
+  { color : "blue",  r : 0,   g : 0,   b : 255 },
+  { color : "green", r : 0,   g : 255, b : 0   }
+];
+
+var ds = new Miso.Dataset({
+  data : data
+});
+
+ds.fetch({ 
+  success : function() {
+    console.log("Dataset Ready. Columns: " + this.columnNames());
+    console.log("There are " + this.length + " rows");
+    console.log("Available Colors: " + this.column("color").data);
+  }
+});
+
+
+*/
+
+var data_url = "http://localhost:8888/data_files/aggregate_table.csv";
+
+var ds_fun =  function (data_url) { 
+
+       var ds = new Miso.Dataset({
+          url : data_url,
+          delimiter : ","
+  
+        });
+        
+        return ds;
+       
+} 
+
+var ds = ds_fun ("http://localhost:8888/data_files/aggregate_table.csv");
+
+ds.fetch({ 
+  success : function() {
+    console.log(ds.columnNames());
+  },
+  error : function() {
+    console.log("Are you sure you are connected to the internet?");
+  }
+});
+
+
+
+</script>
+
+</body>
+
+</html>
+

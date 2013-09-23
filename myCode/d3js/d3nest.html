@@ -30,8 +30,13 @@ body {
 
 
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://underscorejs.org/underscore.js"></script>
+
+<div id="data_table">
+
+</div>
+
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/underscore.js"></script>
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
@@ -47,19 +52,30 @@ var d3jsentries;
 // get the file name from URL
 // aggregate_report3.csv
 var file_name = GetUrlValue('file_name');
-d3.csv("./data/".concat(file_name), function(data) {
-        testResults = data;
+var folder_name = GetUrlValue('folder_name');
+d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
+       
 		console.log('csv data in d3js');
-        console.log(testResults);
+        //console.log(data);
 		
-		console.log('grouped by label and perform average of elapsed time and percentile for each label');
+        // filter the row having label as "TOTAL"
+        
+        data_2  = _.filter(data, function(d) { return d.sampler_label !== "TOTAL"} );
+        
+        console.log ( data_2 );
+        
+        console.log(_.keys(data_2[0]));
+        
+        // data_3  = _.filter(data_2, function(d) { return d.sampler_label == "TOTAL"} ); // for test
+        
+		//console.log('grouped by label and perform average of elapsed time and percentile for each label');
 		/*groupbyLabel = d3.nest()
 				 .key(function(d) { return d.label; })
 				 .sortKeys(d3.ascending)
 				 .entries(data); */
 
 
-        groupbyLabel = d3.nest()
+       /* groupbyLabel = d3.nest()
             .key(function(d) { return d.label; })
             //.sortKeys(d3.ascending)
             .rollup(function(d) {
@@ -73,7 +89,30 @@ d3.csv("./data/".concat(file_name), function(data) {
             .entries(data);
 
         console.log('groupbyLabel');
-		console.log(groupbyLabel);
+		console.log(groupbyLabel); */
+        
+        
+        d3.select("#data_table")
+                .append("table")
+                .attr("border", "0")
+                .append("tr")
+                .selectAll("th")
+                .data(_.keys(data_2[0]))
+                .enter()
+                .append("th")
+                .text(function(d) { return d});
+                
+                
+        d3.select("#data_table table")
+            
+            .data(data_2)
+            .append("tr")
+            .selectAll("td")
+            
+            .enter()
+            .append("td")
+            .text("cell");
+               
 });
 
 // A function to get the value of a key from query string
@@ -89,3 +128,5 @@ function GetUrlValue(VarSearch){
 }
 
 </script>
+
+</body>
