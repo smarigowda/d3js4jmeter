@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
+
+<head>
+
 <style>
 
-rect:hover {
-        fill: orange;
-}
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: steelblue;
-}
-
-.x.axis path {
-  display: none;
-}
+td.red {color: red;}
 
 </style>
-
-
-<body>
-
-<div id="data_table">
-
-</div>
-
 <script src="/js/d3.v3.min.js"></script>
 <script src="/js/underscore.js"></script>
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
@@ -60,7 +34,9 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
 		
         // filter the row having label as "TOTAL"
         
-        data_2  = _.filter(data, function(d) { return d.sampler_label !== "TOTAL"} );
+        //data_2  = _.filter(data, function(d) { return d.sampler_label !== "TOTAL"} );
+        
+        data_2 = data;
         
         console.log ( data_2 );
         
@@ -92,7 +68,7 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
 		console.log(groupbyLabel); */
         
         
-        d3.select("#data_table")
+       /* d3.select("#data_table")
                 .append("table")
                 .attr("border", "0")
                 .append("tr")
@@ -104,14 +80,47 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
                 
                 
         d3.select("#data_table table")
-            
+            .selectAl()
             .data(data_2)
             .append("tr")
-            .selectAll("td")
+            .selectAll("td") */
             
-            .enter()
-            .append("td")
-            .text("cell");
+        var table = d3.select("body")
+            .append("table")
+            
+            table.append("thead").append("tr")
+                    .selectAll("td")
+                    .data(_.keys(data_2[0]))
+                    .enter()
+                    .append("td")
+                    .text(function(d) { return d } )
+                    .attr("bgcolor", "cyan");
+                    
+            table.append("tbody")
+                    .selectAll("tr")
+                        .data(data_2)
+                        .enter()
+                        .append("tr")
+                        .attr("bgcolor", function(d) { console.log(d.sampler_label); return d.sampler_label == "TOTAL"? "gray" : "white" } )
+                    .selectAll("td")
+                        .data(function(d, i) {return _.values(d) })
+                        .enter()
+                        .append("td")
+                        .text(function(d) { return d; })
+                        .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? "red": "none"; });
+            
+        /*d3.selectAll("tbody")
+                //.data(_.keys(data_2[0]))
+                .data(data_2)
+                .enter()
+                .append("tr");*/
+                
+            /* .selectAll("td")
+                .data(function(d, i) {_.values(d) } )
+                .enter()
+                .append()
+                .text("cell") */
+              
                
 });
 
@@ -128,5 +137,8 @@ function GetUrlValue(VarSearch){
 }
 
 </script>
+</head>
+
+<body>
 
 </body>
