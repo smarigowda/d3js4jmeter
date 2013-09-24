@@ -6,7 +6,10 @@
 
 <style>
 
-td.red {color: red;}
+tbody tr {font-family:Arial; font-size:8pt;} 
+td.gt10 {color: red;}
+td.gt5 { color: blue;}
+thead tr {font-family:Arial; font-size:10pt;} 
 
 </style>
 <script src="/js/d3.v3.min.js"></script>
@@ -14,14 +17,6 @@ td.red {color: red;}
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
-
-var testResults;
-var elapsedTime = [ ];
-var finalApdex = [ ];
-var apdexT = 10000000;
-var apdexFourT = apdexT * 4;
-var apdexTable = [ ];
-var d3jsentries;
 
 // get the file name from URL
 // aggregate_report3.csv
@@ -85,9 +80,9 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
             .append("tr")
             .selectAll("td") */
             
-        var table = d3.select("body")
-            .append("table")
+        var table = d3.select("body").append("table")
             
+            // header
             table.append("thead").append("tr")
                     .selectAll("td")
                     .data(_.keys(data_2[0]))
@@ -95,19 +90,20 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
                     .append("td")
                     .text(function(d) { return d } )
                     .attr("bgcolor", "cyan");
-                    
+            
+            // data rows
             table.append("tbody")
                     .selectAll("tr")
                         .data(data_2)
                         .enter()
                         .append("tr")
-                        .attr("bgcolor", function(d) { console.log(d.sampler_label); return d.sampler_label == "TOTAL"? "gray" : "white" } )
+                        .attr("bgcolor", function(d) { console.log(d.sampler_label); return d.sampler_label == "TOTAL"? "#F8F8F8" : "white" } )
                     .selectAll("td")
                         .data(function(d, i) {return _.values(d) })
                         .enter()
                         .append("td")
-                        .text(function(d) { return d; })
-                        .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? "red": "none"; });
+                        .text(function(d, i) { return(i == 7 || i == 8 || i == 9? Number(d).toFixed(2): d); })
+                        .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? (+d > 10000 ? "gt10" : "gt5"): "none"; });
             
         /*d3.selectAll("tbody")
                 //.data(_.keys(data_2[0]))
