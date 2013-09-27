@@ -52,7 +52,7 @@ var results;
 var file_name = GetUrlValue('file_name');
 var folder_name = GetUrlValue('folder_name');
 d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
-		console.log('csv data read');
+		console.log('data read');
         
         gdata = data;
         
@@ -71,9 +71,9 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         
         console.log(results2);
         
-        results = _.filter(results2, function(d) {return d.attributes.t.value > 200})
-        
-        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value; })
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500})
+         
+        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; })
         
         //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.t.value; })
         

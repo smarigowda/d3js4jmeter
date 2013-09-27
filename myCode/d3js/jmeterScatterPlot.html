@@ -81,7 +81,9 @@ var yAxis = d3.svg.axis()
 // aggregate_report3.csv
 var file_name = GetUrlValue('file_name');
 
-d3.csv("./data/".concat(file_name), function(data) {
+console.log('file_name');
+
+d3.csv("./data/prson/".concat(file_name), function(data) {
     
         gdata = data;
         
@@ -162,7 +164,7 @@ d3.csv("./data/".concat(file_name), function(data) {
         .attr("r", 5)
         .style("opacity", 0.3); 
 
-});
+}); 
 
 // A function to get the value of a key from query string
 function GetUrlValue(VarSearch){

@@ -1,65 +1,52 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
+
+<head>
+
 <style>
 
-rect:hover {
-        fill: orange;
-}
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: steelblue;
-}
-
-.x.axis path {
-  display: none;
-}
+tbody tr {font-family:Arial; font-size:8pt;} 
+td.gt10 {color: red;}
+td.gt5 { color: blue;}
+thead tr {font-family:Arial; font-size:10pt;} 
 
 </style>
-
-
-<body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://underscorejs.org/underscore.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/underscore.js"></script>
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
 
-var testResults;
-var elapsedTime = [ ];
-var finalApdex = [ ];
-var apdexT = 10000000;
-var apdexFourT = apdexT * 4;
-var apdexTable = [ ];
-var d3jsentries;
-
 // get the file name from URL
 // aggregate_report3.csv
 var file_name = GetUrlValue('file_name');
-d3.csv("./data/".concat(file_name), function(data) {
-        testResults = data;
+var folder_name = GetUrlValue('folder_name');
+d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
+       
 		console.log('csv data in d3js');
-        console.log(testResults);
+        //console.log(data);
 		
-		console.log('grouped by label and perform average of elapsed time and percentile for each label');
+        // filter the row having label as "TOTAL"
+        
+        //data_2  = _.filter(data, function(d) { return d.sampler_label !== "TOTAL"} );
+        
+        data_2 = data;
+        
+        console.log ( data_2 );
+        
+        console.log(_.keys(data_2[0]));
+        
+        // data_3  = _.filter(data_2, function(d) { return d.sampler_label == "TOTAL"} ); // for test
+        
+		//console.log('grouped by label and perform average of elapsed time and percentile for each label');
 		/*groupbyLabel = d3.nest()
 				 .key(function(d) { return d.label; })
 				 .sortKeys(d3.ascending)
 				 .entries(data); */
 
 
-        groupbyLabel = d3.nest()
+       /* groupbyLabel = d3.nest()
             .key(function(d) { return d.label; })
             //.sortKeys(d3.ascending)
             .rollup(function(d) {
@@ -73,7 +60,64 @@ d3.csv("./data/".concat(file_name), function(data) {
             .entries(data);
 
         console.log('groupbyLabel');
-		console.log(groupbyLabel);
+		console.log(groupbyLabel); */
+        
+        
+       /* d3.select("#data_table")
+                .append("table")
+                .attr("border", "0")
+                .append("tr")
+                .selectAll("th")
+                .data(_.keys(data_2[0]))
+                .enter()
+                .append("th")
+                .text(function(d) { return d});
+                
+                
+        d3.select("#data_table table")
+            .selectAl()
+            .data(data_2)
+            .append("tr")
+            .selectAll("td") */
+            
+        var table = d3.select("body").append("table")
+            
+            // header
+            table.append("thead").append("tr")
+                    .selectAll("td")
+                    .data(_.keys(data_2[0]))
+                    .enter()
+                    .append("td")
+                    .text(function(d) { return d } )
+                    .attr("bgcolor", "cyan");
+            
+            // data rows
+            table.append("tbody")
+                    .selectAll("tr")
+                        .data(data_2)
+                        .enter()
+                        .append("tr")
+                        .attr("bgcolor", function(d) { console.log(d.sampler_label); return d.sampler_label == "TOTAL"? "#F8F8F8" : "white" } )
+                    .selectAll("td")
+                        .data(function(d, i) {return _.values(d) })
+                        .enter()
+                        .append("td")
+                        .text(function(d, i) { return(i == 7 || i == 8 || i == 9? Number(d).toFixed(2): d); })
+                        .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? (+d > 10000 ? "gt10" : "gt5"): "none"; });
+            
+        /*d3.selectAll("tbody")
+                //.data(_.keys(data_2[0]))
+                .data(data_2)
+                .enter()
+                .append("tr");*/
+                
+            /* .selectAll("td")
+                .data(function(d, i) {_.values(d) } )
+                .enter()
+                .append()
+                .text("cell") */
+              
+               
 });
 
 // A function to get the value of a key from query string
@@ -89,3 +133,8 @@ function GetUrlValue(VarSearch){
 }
 
 </script>
+</head>
+
+<body>
+
+</body>
