@@ -1,0 +1,49 @@
+<head>
+    <script src="../../js/d3.v3.min.js"></script>
+    <script src="../../js/underscore.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/test.css">
+    <script src="./js/d3test.js"></script>
+    <script src="./js/d3dispatch.js"></script>
+    <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+</head>
+
+<body>
+
+<h1> D3 Template Page - h1</h1>
+<h2> D3 Template Page - h2</h2>
+<h1> D3 Template Page - h1</h1>
+
+<script>
+
+var table1 = d3.myd3lib.table();
+
+table1(d3.select('body').selectAll('h1')); // attach to all h1
+
+// table1(d3.select('body').select('h1')); // attach to only the first h1
+
+// bind a listener function to the custom event, note sub1 is for name space
+table1.on('customHover.sub1',
+    function() {
+            d3.select('body').append('h2').text('customHover.sub1');
+            console.log('customHover.sub1');
+            //console.log(d3.event);
+
+    }
+);
+
+// both .sub1 and .sub2 are registered to customHover custom event
+
+// bind a listener function to the custom event
+table1.on('customHover.sub2',
+    function() {
+            d3.select('body').append('h2').text('customHover.sub2');
+            console.log('customHover.sub2');
+            //console.log(d3.event);
+
+    }
+);
+
+
+</script>
+
+</body>
