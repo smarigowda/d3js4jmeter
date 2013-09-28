@@ -1,45 +1,20 @@
 <!DOCTYPE html>
+<!-- 
+
+    jtl file has to be renamed as .xml
+    
+    Function:
+    
+    > Read the xml file
+    > Filter requests with some criteria. Ex: Filter all HTTP requests having > 5000 ms response time
+
+-->
 <meta charset="utf-8">
 
-<style>
-
-rect:hover {
-        fill: orange;
-}
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: black;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.grid .tick {
-    stroke: lightgrey; opacity: 0.7;
-}
-
-.grid path {
-    stroke-width: 0;
-}
-
-</style>
-
-
 <body>
-<script src="/d3js4jmeter/js/d3.v3.min.js"></script>
-<script src="/d3js4jmeter/js/underscore.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/underscore.js"></script>
+
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
@@ -58,7 +33,10 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         
         console.log(data); // an array of objects, type of Document
         // gdata.__proto__; // Document
-
+        
+        result_1 = d3.select(gdata).selectAll("sample");
+        console.log(result_1);
+        
         //results = d3.select(gdata).selectAll("*")
         results2 = d3.select(gdata).selectAll("httpSample")[0]; // an array of all http samples
         
@@ -71,7 +49,9 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         
         console.log(results2);
         
-        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500})
+        xml2array = _.map(results2, function(d) { return d } ) // this convers from xml to JavaScript Array Object
+        
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500}) // nested array of objects, JSON
          
         d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; })
         

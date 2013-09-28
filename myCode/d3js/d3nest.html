@@ -4,16 +4,10 @@
 
 <head>
 
-<style>
-
-tbody tr {font-family:Arial; font-size:8pt;} 
-td.gt10 {color: red;}
-td.gt5 { color: blue;}
-thead tr {font-family:Arial; font-size:10pt;} 
-
-</style>
 <script src="/js/d3.v3.min.js"></script>
 <script src="/js/underscore.js"></script>
+<script src="/myCode/d3js/js/myjmeter.js"></script>
+<link rel="stylesheet" type="text/css" href="/myCode/d3js/css/test.css">
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
@@ -80,7 +74,8 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
             .append("tr")
             .selectAll("td") */
             
-        var table = d3.select("body").append("table")
+            // begin table markup
+            var table = d3.select("body").append("table")
             
             // header
             table.append("thead").append("tr")
@@ -97,12 +92,18 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
                         .data(data_2)
                         .enter()
                         .append("tr")
-                        .attr("bgcolor", function(d) { console.log(d.sampler_label); return d.sampler_label == "TOTAL"? "#F8F8F8" : "white" } )
+                        .attr("bgcolor", function(d) {
+                                 console.log(d.sampler_label); 
+                                 return d.sampler_label == "TOTAL"? "#F8F8F8" : "white";
+                         })
                     .selectAll("td")
-                        .data(function(d, i) {return _.values(d) })
+                        .data(function(d) { return _.values(d) })
                         .enter()
                         .append("td")
-                        .text(function(d, i) { return(i == 7 || i == 8 || i == 9? Number(d).toFixed(2): d); })
+                        .text(function(d, i, j) { 
+                                //console.log( i + " " + j ); // j = row index, i = column within each row
+                                return(i == 7 || i == 8 || i == 9? Number(d).toFixed(2): d);
+                         })
                         .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? (+d > 10000 ? "gt10" : "gt5"): "none"; });
             
         /*d3.selectAll("tbody")
@@ -136,5 +137,5 @@ function GetUrlValue(VarSearch){
 </head>
 
 <body>
-
+<svg width="15cm" height="4cm" version="1.1"></svg>
 </body>

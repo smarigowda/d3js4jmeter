@@ -25,16 +25,20 @@ console.log($)
     //$('body').html('ajax complete...')
 }); */
 
-var jqxhr = $.post("http://publisher.dev:8888/myCode/JavaScript/JQueryTemplate.html");
+var jqxhr = $.get("http://localhost:8888/myCode/JavaScript/JQueryTemplate.html", function() { alert('in ajax...')});
 
-jqxhr.done(alert( "done success"));
+// Promise
+jqxhr.done(alert( "done success..."));
 
-jqxhr.always(alert( "always success"));
+// Promise
+jqxhr.always(alert( "always success..."));
 
 
 //d3.select('body').append('text').text('Ajax complete...');
 console.log('end')
 
 </script>
+
+<div id="camerastork-widget"/>
 
 </body>
