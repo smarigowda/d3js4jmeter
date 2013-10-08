@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+</style>
+
+
+<body>
+
+<div id="images"/>
+
+<script src="../../js/jquery-2.0.3.js"></script>
+<script src="../../myCode/d3js/js/LAB.js"></script>
+
+<script>
+
+(function() {
+  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  
+  var xhr = $.getJSON( flickerAPI, {
+    tags: "rain",
+    tagmode: "any",
+    format: "json"
+  });
+  
+  // Promise implementation
+  xhr.done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        console.log(item);
+        if ( i === 25 ) {
+          return false;
+        }
+      });
+    });
+    
+    
+    
+})();
+
+
+/* 
+
+(function() {
+  var myURL = "http://localhost:8888/myCode/d3js/d3nest.html?jsoncallback=?";
+  $.getJSON(myURL, function() {console.log('success...')});
+})();
+
+*/
+
+/*
+
+Response format should match:
+
+http://api.flickr.com/services/feeds/photos_public.gne?tags=rain&tagmode=any&format=json
+
+Response Header Should be:
+
+Content-Type:application/x-javascript; charset=utf-8
+
+
+*/
+
+</script>
+
+</body>

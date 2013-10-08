@@ -2,11 +2,11 @@ p {color: blue;}
 
 tbody tr {font-family:Arial; font-size:8pt;}
 
-td.gt10 {color: red;}
+td.gt10 { color: red; font-weight: bold}
 
 td.gt5 { color: orange;}
 
-thead tr {font-family:Arial; font-size:10pt;}
+thead tr {font-family:Arial; font-size:8pt; background-color: lightblue; font-weight: bold}
 
 .box {
         background-color: skyblue;
@@ -14,4 +14,9 @@ thead tr {font-family:Arial; font-size:10pt;}
         height: 18px;
         padding: 4px;
         margin: 1px;
+}
+
+tr.total { 
+  background-color:  #A4A4A4;
+  font-weight: bold
 }

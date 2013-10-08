@@ -24,7 +24,7 @@ table1(d3.select('body').selectAll('h1')); // attach to all h1
 // bind a listener function to the custom event, note sub1 is for name space
 table1.on('customHover.sub1',
     function() {
-            d3.select('body').append('h2').text('customHover.sub1');
+            d3.select('body').append('h2').text('customHover.sub1...');
             console.log('customHover.sub1');
             //console.log(d3.event);
 

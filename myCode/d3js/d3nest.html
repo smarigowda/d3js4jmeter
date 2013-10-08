@@ -84,7 +84,8 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
                     .enter()
                     .append("td")
                     .text(function(d) { return d } )
-                    .attr("bgcolor", "cyan");
+                    //.attr("bgcolor", "#F8F8F8");
+					//.attr({"bgcolor": "#F8F8F8"});
             
             // data rows
             table.append("tbody")
@@ -92,9 +93,13 @@ d3.csv(["./data/", folder_name, "/", file_name, "/"].join(''), function(data) {
                         .data(data_2)
                         .enter()
                         .append("tr")
-                        .attr("bgcolor", function(d) {
+                        // .attr("bgcolor", function(d) {
+                        //         console.log(d.sampler_label); 
+                        //         return d.sampler_label === "TOTAL"? "#F8F8F8" : "white";
+                        // })
+						.attr("class", function(d) {
                                  console.log(d.sampler_label); 
-                                 return d.sampler_label == "TOTAL"? "#F8F8F8" : "white";
+                                 return d.sampler_label === "TOTAL"? "total" : "none";
                          })
                     .selectAll("td")
                         .data(function(d) { return _.values(d) })
@@ -137,5 +142,5 @@ function GetUrlValue(VarSearch){
 </head>
 
 <body>
-<svg width="15cm" height="4cm" version="1.1"></svg>
+<!-- <svg width="15cm" height="4cm" version="1.1"></svg> -->
 </body>
