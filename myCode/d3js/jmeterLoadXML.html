@@ -27,18 +27,23 @@ var results;
 var file_name = GetUrlValue('file_name');
 var folder_name = GetUrlValue('folder_name');
 d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
+	
 		console.log('data read');
         
-        gdata = data;
+        gdata = data; // data is an XML document @ this stage.
         
         console.log(data); // an array of objects, type of Document
         // gdata.__proto__; // Document
         
-        result_1 = d3.select(gdata).selectAll("sample");
+        result_1 = d3.select(gdata).selectAll("sample"); // An arrayof array contains all sample elements
+		
         console.log(result_1);
         
         //results = d3.select(gdata).selectAll("*")
-        results2 = d3.select(gdata).selectAll("httpSample")[0]; // an array of all http samples
+		
+		console.log(d3.select(gdata).selectAll("httpSample")); // An array of array containing all httpSample elements
+		
+        results2 = d3.select(gdata).selectAll("httpSample")[0]; // An array of all httpsample 
         
         results3 = d3.select(gdata).selectAll("sample")[0]; // an array of all samples
         
@@ -48,6 +53,11 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         // results3.map(function(d) {return d.attributes.t.value})
         
         console.log(results2);
+		
+		xml3array = _.map(results3, function(d) { return d.attributes; } )
+		
+		xml3array_1 = xml3array.filter(function(d) { return d.lb.nodeValue.match(/^ST.*/)}) // Each object needs to be accesses individually using map. This is a very imp step.
+		
         
         xml2array = _.map(results2, function(d) { return d } ) // this convers from xml to JavaScript Array Object
         
