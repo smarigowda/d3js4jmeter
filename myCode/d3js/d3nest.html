@@ -20,7 +20,10 @@
 
 var results = [ {file_name: 'aggregate_table_self_reg.csv', folder_name: 'saltare'} ];
 
-d3.csv(["./data/", results[0].folder_name, "/", results[0].file_name, "/"].join(''), function(data) {
+
+// using accessor function to add a new column.
+// d3.csv(["./data/", results[0].folder_name, "/", results[0].file_name, "/"].join(''), function(d) { d.new_column = 0 ; console.log(d); return d } , function(data) {
+   d3.csv(["./data/saltare/aggregate_table_self_reg.csv"].join(''), function(d) { d.new_column = 0 ; console.log(d); return d } , function(data) {
        
         d3.select('body').append('p').text('Test: ' + results[0].file_name);
 		

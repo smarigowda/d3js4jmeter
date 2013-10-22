@@ -38,6 +38,14 @@ body {
 
 
 <body>
+
+<div>
+    <h1>** Throughput Plot **</h1>
+    <h3>x Axis - Test Execution Duration</h3>
+    <h3>y Axis - Throughput, Number of Responses Received Per Second</h3>
+
+</div>
+
 <script src="../../js/d3.v3.min.js"></script>
 <script src="../../js/underscore.js"></script>
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
@@ -55,8 +63,8 @@ var gdata;
 
 // get the file name from URL
 // aggregate_report3.csv
-var file_name = GetUrlValue('file_name');
-var folder_name = GetUrlValue('folder_name');
+var file_name = 'test_003_all_aggregate_for_analysis.csv';
+var folder_name = 'nmel_2616';
 d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
 		console.log('csv data read');
         
@@ -179,18 +187,5 @@ var yAxis = d3.svg.axis()
     console.log('End Time in Epoch Sec = ' + x.domain()[1]/1000)
 
 }); // end for d3.csv
-
-// A function to get the value of a key from the URL query string
-function GetUrlValue(VarSearch){
-    var SearchString = window.location.search.substring(1);
-    var VariableArray = SearchString.split('&');
-    // loop through each of the URL parameters, split and check
-    for(var i = 0; i < VariableArray.length; i++){
-        var KeyValuePair = VariableArray[i].split('=');
-        if(KeyValuePair[0] == VarSearch){
-            return KeyValuePair[1];
-        }
-    }
-}
 
 </script>
