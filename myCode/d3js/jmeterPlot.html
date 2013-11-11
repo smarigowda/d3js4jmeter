@@ -55,8 +55,11 @@ var gdata;
 
 // get the file name from URL
 // aggregate_report3.csv
-var file_name = GetUrlValue('file_name');
-var folder_name = GetUrlValue('folder_name');
+// var file_name = GetUrlValue('file_name');
+// var folder_name = GetUrlValue('folder_name');
+var file_name = '01112013_TEST_1_STU_AND_TEACHR_200TCHR_810STU_all_filt_consolidated.csv';
+var folder_name = 'gedu_OCT2013';
+
 d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
 		console.log('csv data read');
         
@@ -191,14 +194,14 @@ svg.selectAll(".x.axis text")  // select all the text elements for the xaxis
 svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 2)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Percentile Response Time - mili seconds")
-      .attr("fill", "blue")
-      .attr("font-size", 12);
+    // .append("text")
+    //   .attr("transform", "rotate(-90)")
+    //   .attr("y", 2)
+    //   .attr("dy", ".71em")
+    //   .style("text-anchor", "end")
+    //   .text("Percentile Response Time - mili seconds")
+    //   .attr("fill", "blue")
+    //   .attr("font-size", 12);
 
 svg.selectAll(".bar")
       .data(groupbyLabel)

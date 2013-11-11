@@ -1,0 +1,16 @@
+<html> <head>
+<title>Browser UI Thread Example</title> </head>
+<body>
+<button onclick="handleClick()">Click Me</button> 
+
+<script type="text/javascript">
+
+function handleClick(){
+	var div = document.createElement("div"); 
+	div.innerHTML = "Clicked!"; 
+	document.body.appendChild(div);
+}
+
+</script> </body>
+
+</html>
