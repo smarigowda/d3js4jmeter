@@ -40,6 +40,7 @@ body {
 <body>
 <script src="../../js/d3.v3.min.js"></script>
 <script src="../../js/underscore.js"></script>
+
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
@@ -69,19 +70,24 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
     
-/*var line = d3.svg.line()
-    //.interpolate("basis")
-    .x(function(d) { return x(d.timeStamp); })
-    .y(function(d) { return y(d.elapsed); });*/
-
 // get the file name from URL
 // aggregate_report3.csv
-var file_name = GetUrlValue('file_name');
-
-d3.csv("./data/".concat(file_name), function(data) {
+// var file_name = 'test_003_all_aggregate_for_analysis.csv';
+var file_name = 'aggregate_filtered.csv';
+// var folder_name = 'nmel_2616';
+var folder_name = 'iml_Nov2013/21112013_120901_BASELINE_1TCHR_1STU';
+d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
     
         gdata = data;
-        
+
+        var labels = _.uniq(gdata.map(function(d) { return d.label } ));
+        console.log(labels);
+
+        d3.select('body').append('select').selectAll('option')
+            .data(labels).enter().append('option')
+            .attr('value', function(d) { return d })
+            .text(function(d) { return d })
+
 		console.log('csv data read:');
         // data is an array of objects
         //console.log(data);  // future modifications will get reflected into the console.log
@@ -146,18 +152,5 @@ d3.csv("./data/".concat(file_name), function(data) {
         .style("opacity", 0.3); 
 
 });
-
-// A function to get the value of a key from query string
-function GetUrlValue(VarSearch){
-    var SearchString = window.location.search.substring(1);
-    var VariableArray = SearchString.split('&');
-    // loop through each of the URL parameters, split and check
-    for(var i = 0; i < VariableArray.length; i++){
-        var KeyValuePair = VariableArray[i].split('=');
-        if(KeyValuePair[0] == VarSearch){
-            return KeyValuePair[1];
-        }
-    }
-}
 
 </script>
