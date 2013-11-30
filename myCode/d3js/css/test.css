@@ -1,30 +1,22 @@
-rect:hover {
-    fill: orange;
+p {color: brown; font-weight: normal; font-size:18pt;}
+
+tbody tr {font-family:Arial; font-size:8pt;}
+
+td.gt10 { color: red; font-weight: bold}
+
+td.gt5 { color: orange;}
+
+thead tr {font-family:Arial; font-size:8pt; background-color: lightblue; font-weight: bold}
+
+.box {
+        background-color: skyblue;
+        width: 24px;
+        height: 18px;
+        padding: 4px;
+        margin: 1px;
 }
 
-body {
-    font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-
-.bar {
-    fill: black;
-}
-
-.x.axis path {
-    display: none;
-}
-
-.grid .tick {
-    stroke: lightgrey; opacity: 0.7;
-}
-
-.grid path {
-    stroke-width: 0;
+tr.total { 
+  background-color:  #A4A4A4;
+  font-weight: bold
 }

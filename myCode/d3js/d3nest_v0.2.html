@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+<head>
+
+<script src="/d3js4jmeter/js/d3.v3.min.js"></script>
+<script src="/d3js4jmeter/js/underscore.js"></script>
+<script src="/d3js4jmeter/myCode/d3js/js/myjmeter.js"></script>
+<script src="/d3js4jmeter/myCode/d3js/js/table.js"></script>
+<link rel="stylesheet" type="text/css" href="/d3js4jmeter/myCode/d3js/css/test.css">
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<script>
+
+// get the file name from URL
+// aggregate_report3.csv
+//var file_name = GetUrlValue('file_name');
+//var folder_name = GetUrlValue('folder_name');
+
+var results = [ {file_name: 'aggregate_table_self_reg.csv', folder_name: 'saltare'} ];
+
+d3.csv(["./data/", results[0].folder_name, "/", results[0].file_name, "/"].join(''), function(data) {
+       
+        d3.select('body').append('p').text(results[0].file_name);
+		
+		console.log('csv data in d3js');
+        //console.log(data);
+		
+        // filter the row having label as "TOTAL"
+        
+        //data_2  = _.filter(data, function(d) { return d.sampler_label !== "TOTAL"} );
+        
+        data_2 = data;
+        
+        console.log ( data_2 );
+        
+        console.log(_.keys(data_2[0]));
+        
+        // data_3  = _.filter(data_2, function(d) { return d.sampler_label == "TOTAL"} ); // for test
+        
+		//console.log('grouped by label and perform average of elapsed time and percentile for each label');
+		/*groupbyLabel = d3.nest()
+				 .key(function(d) { return d.label; })
+				 .sortKeys(d3.ascending)
+				 .entries(data); */
+
+
+       /* groupbyLabel = d3.nest()
+            .key(function(d) { return d.label; })
+            //.sortKeys(d3.ascending)
+            .rollup(function(d) {
+                console.log(d);
+                console.log(_.pluck(d, 'elapsed').map(function(d2) {return +d2}));
+                return {
+                    avg_elapsed: d3.mean(d, function(g) { return +g.elapsed; }),
+                    percentile90: d3.quantile(_.pluck(d, 'elapsed').map(function(d2) {return +d2}), 0.75)
+                }
+            })
+            .entries(data);
+
+        console.log('groupbyLabel');
+		console.log(groupbyLabel); */
+        
+        
+       /* d3.select("#data_table")
+                .append("table")
+                .attr("border", "0")
+                .append("tr")
+                .selectAll("th")
+                .data(_.keys(data_2[0]))
+                .enter()
+                .append("th")
+                .text(function(d) { return d});
+                
+                
+        d3.select("#data_table table")
+            .selectAl()
+            .data(data_2)
+            .append("tr")
+            .selectAll("td") */
+            
+            // begin table markup
+            var table = d3.select("body").append("table")
+            
+            // header
+            table.append("thead").append("tr")
+                    .selectAll("td")
+                    .data(_.keys(data_2[0]))
+                    .enter()
+                    .append("td")
+                    .text(function(d) { return d } )
+                    //.attr("bgcolor", "#F8F8F8");
+					//.attr({"bgcolor": "#F8F8F8"});
+            
+            // data rows
+            table.append("tbody")
+                    .selectAll("tr")
+                        .data(data_2)
+                        .enter()
+                        .append("tr")
+                        // .attr("bgcolor", function(d) {
+                        //         console.log(d.sampler_label); 
+                        //         return d.sampler_label === "TOTAL"? "#F8F8F8" : "white";
+                        // })
+						.attr("class", function(d) {
+                                 console.log(d.sampler_label); 
+                                 return d.sampler_label === "TOTAL"? "total" : "none";
+                         })
+                    .selectAll("td")
+                        .data(function(d) { return _.values(d) })
+                        .enter()
+                        .append("td")
+                        .text(function(d, i, j) { 
+                                //console.log( i + " " + j ); // j = row index, i = column within each row
+                                return(i == 7 || i == 8 || i == 9? Number(d).toFixed(2): d);
+                         })
+                        .attr("class", function(d, i) { return (i == 4 & +d > 5000) ? (+d > 10000 ? "gt10" : "gt5"): "none"; });
+            
+        /*d3.selectAll("tbody")
+                //.data(_.keys(data_2[0]))
+                .data(data_2)
+                .enter()
+                .append("tr");*/
+                
+            /* .selectAll("td")
+                .data(function(d, i) {_.values(d) } )
+                .enter()
+                .append()
+                .text("cell") */
+              
+               
+});
+
+
+// query CouchDB, construct the object?
+// tablegen.setResults([ {file_name: 'aggregate_filtered.csv', folder_name: 'saltare'} ]);
+tablegen.showResults();
+//tablegen.genTable();
+//tablegen.genTable([ {file_name: 'aggregate_table.csv', folder_name: 'ateach'} ]);
+
+
+// A function to get the value of a key from query string
+function GetUrlValue(VarSearch){
+    var SearchString = window.location.search.substring(1);
+    var VariableArray = SearchString.split('&');
+    for(var i = 0; i < VariableArray.length; i++){
+        var KeyValuePair = VariableArray[i].split('=');
+        if(KeyValuePair[0] == VarSearch){
+            return KeyValuePair[1];
+        }
+    }
+}
+
+</script>
+</head>
+
+<body>
+<!-- <svg width="15cm" height="4cm" version="1.1"></svg> -->
+
+</body>

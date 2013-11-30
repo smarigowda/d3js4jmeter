@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="684" it="15904" lt="0" ts="1385563832915" s="false" lb="S02_STUDENTREGISTRATIONANDTAKESTEST_T15_SUBMIT" rc="" rm="Number of samples in transaction : 2, number of failing samples : 1" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-87" dt="" de="" by="21077" sc="1" ec="1" ng="25" na="25" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+  <httpSample t="361" it="0" lt="103" ts="1385563848819" s="false" lb="/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-87" dt="text" de="UTF-8" by="10764" sc="1" ec="1" ng="25" na="25" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+    <assertionResult>
+      <name>Response Assertion</name>
+      <failure>true</failure>
+      <error>false</error>
+      <failureMessage>Test failed: text expected to contain /You have successfully/</failureMessage>
+    </assertionResult>
+    <httpSample t="103" it="0" lt="103" ts="1385563848819" s="true" lb="http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main" rc="302" rm="Moved Temporarily" tn="" dt="text" de="" by="343" sc="1" ec="0" ng="0" na="0" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+      <responseHeader class="java.lang.String">HTTP/1.1 302 Moved Temporarily
+Date: Wed, 27 Nov 2013 14:50:48 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Location: http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main
+Content-Length: 0
+Keep-Alive: timeout=5, max=63
+Connection: Keep-Alive
+Content-Type: text/plain
+</responseHeader>
+      <requestHeader class="java.lang.String">Content-Length: 1508
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=---------------------------7d159c1302d0y0
+</requestHeader>
+      <responseData class="java.lang.String"></responseData>
+      <responseFile class="java.lang.String"></responseFile>
+      <cookies class="java.lang.String">JSESSIONID=76d740ac-6148-4154-86ec-79b21830367d.customer-14; SERVERID=03-0GHIB55MENNNU</cookies>
+      <method class="java.lang.String">POST</method>
+      <queryString class="java.lang.String">-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;eventSubmit_doRead_add_submission_form&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+x&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;option&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+post&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;currentAttachment&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;assignmentId&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+/assignment/a/bda06a06-8a7a-4afb-a724-d04ad46c63ea/953b0a58-77a9-4839-b4e0-910ebb3030a3&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;Assignment.view_submission_text&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+&lt;p&gt;&#xd;
+	Class&lt;/p&gt;&#xd;
+&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;submissionFileCount&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+1&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;sakai_csrf_token&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+acd17dd918a5aa75121a93a472891e37324a259c879b2f2a4cdfc0ab27539735&#xd;
+-----------------------------7d159c1302d0y0--&#xd;
+</queryString>
+      <redirectLocation class="java.lang.String">http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</redirectLocation>
+      <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</java.net.URL>
+    </httpSample>
+    <httpSample t="258" it="0" lt="258" ts="1385563848922" s="true" lb="http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-87" dt="text" de="UTF-8" by="10421" sc="1" ec="0" ng="0" na="0" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+      <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:50:48 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=62
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+      <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+      <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/bda06a06-8a7a-4afb-a724-d04ad46c63ea/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main992ebcc6xb481x4b43x853dxdfa2d8861a30&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+						&lt;div class=&quot;alertMessage&quot;&gt;Alert: You are not allowed to submit an assignment.&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;									&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:29 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/bda06a06-8a7a-4afb-a724-d04ad46c63ea/953b0a58-77a9-4839-b4e0-910ebb3030a3&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;acd17dd918a5aa75121a93a472891e37324a259c879b2f2a4cdfc0ab27539735&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+      <responseFile class="java.lang.String"></responseFile>
+      <cookies class="java.lang.String">JSESSIONID=76d740ac-6148-4154-86ec-79b21830367d.customer-14; SERVERID=03-0GHIB55MENNNU</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</java.net.URL>
+    </httpSample>
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:50:48 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=62
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+    <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/bda06a06-8a7a-4afb-a724-d04ad46c63ea/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main992ebcc6xb481x4b43x853dxdfa2d8861a30&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+						&lt;div class=&quot;alertMessage&quot;&gt;Alert: You are not allowed to submit an assignment.&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;									&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:29 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/bda06a06-8a7a-4afb-a724-d04ad46c63ea/953b0a58-77a9-4839-b4e0-910ebb3030a3&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;acd17dd918a5aa75121a93a472891e37324a259c879b2f2a4cdfc0ab27539735&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <cookies class="java.lang.String">JSESSIONID=76d740ac-6148-4154-86ec-79b21830367d.customer-14; SERVERID=03-0GHIB55MENNNU</cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <redirectLocation class="java.lang.String">http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</redirectLocation>
+    <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</java.net.URL>
+  </httpSample>
+  <httpSample t="323" it="0" lt="323" ts="1385563849180" s="true" lb="/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-87" dt="text" de="UTF-8" by="10313" sc="1" ec="0" ng="25" na="25" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:50:49 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=61
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+    <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/bda06a06-8a7a-4afb-a724-d04ad46c63ea/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main992ebcc6xb481x4b43x853dxdfa2d8861a30&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+															&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:29 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/bda06a06-8a7a-4afb-a724-d04ad46c63ea/953b0a58-77a9-4839-b4e0-910ebb3030a3&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;acd17dd918a5aa75121a93a472891e37324a259c879b2f2a4cdfc0ab27539735&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <cookies class="java.lang.String">JSESSIONID=76d740ac-6148-4154-86ec-79b21830367d.customer-14; SERVERID=03-0GHIB55MENNNU</cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/992ebcc6-b481-4b43-853d-dfa2d8861a30?panel=Main</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"/>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<sample t="685" it="14298" lt="0" ts="1385563950262" s="false" lb="S02_STUDENTREGISTRATIONANDTAKESTEST_T15_SUBMIT" rc="" rm="Number of samples in transaction : 2, number of failing samples : 1" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-128" dt="" de="" by="21077" sc="1" ec="1" ng="23" na="23" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+  <httpSample t="368" it="0" lt="97" ts="1385563964560" s="false" lb="/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-128" dt="text" de="UTF-8" by="10764" sc="1" ec="1" ng="23" na="23" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+    <assertionResult>
+      <name>Response Assertion</name>
+      <failure>true</failure>
+      <error>false</error>
+      <failureMessage>Test failed: text expected to contain /You have successfully/</failureMessage>
+    </assertionResult>
+    <httpSample t="97" it="0" lt="97" ts="1385563964560" s="true" lb="http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main" rc="302" rm="Moved Temporarily" tn="" dt="text" de="" by="343" sc="1" ec="0" ng="0" na="0" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+      <responseHeader class="java.lang.String">HTTP/1.1 302 Moved Temporarily
+Date: Wed, 27 Nov 2013 14:52:43 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Location: http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main
+Content-Length: 0
+Keep-Alive: timeout=5, max=87
+Connection: Keep-Alive
+Content-Type: text/plain
+</responseHeader>
+      <requestHeader class="java.lang.String">Content-Length: 1508
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=---------------------------7d159c1302d0y0
+</requestHeader>
+      <responseData class="java.lang.String"></responseData>
+      <responseFile class="java.lang.String"></responseFile>
+      <cookies class="java.lang.String">JSESSIONID=d9831636-1263-4b1a-a3f9-bf450b95d75e.customer-16; SERVERID=03-6MOA6DPVCA43H</cookies>
+      <method class="java.lang.String">POST</method>
+      <queryString class="java.lang.String">-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;eventSubmit_doRead_add_submission_form&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+x&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;option&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+post&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;currentAttachment&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;assignmentId&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+/assignment/a/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/556ef76b-fad6-4bf7-bd37-d4e71db7cde4&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;Assignment.view_submission_text&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+&lt;p&gt;&#xd;
+	Class&lt;/p&gt;&#xd;
+&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;submissionFileCount&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+1&#xd;
+-----------------------------7d159c1302d0y0&#xd;
+Content-Disposition: form-data; name=&quot;sakai_csrf_token&quot;&#xd;
+Content-Type: text/plain; charset=UTF-8&#xd;
+Content-Transfer-Encoding: 8bit&#xd;
+&#xd;
+293c4cfa9039bdaab35869e3f275cb438f0f49c94e17d4ec8235e5d0355b8d2b&#xd;
+-----------------------------7d159c1302d0y0--&#xd;
+</queryString>
+      <redirectLocation class="java.lang.String">http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</redirectLocation>
+      <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</java.net.URL>
+    </httpSample>
+    <httpSample t="271" it="0" lt="271" ts="1385563964657" s="true" lb="http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-128" dt="text" de="UTF-8" by="10421" sc="1" ec="0" ng="0" na="0" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+      <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:52:44 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=86
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+      <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+      <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main006de874x5a66x48fax884cxe6966953b83a&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+						&lt;div class=&quot;alertMessage&quot;&gt;Alert: You are not allowed to submit an assignment.&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;									&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:34 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/556ef76b-fad6-4bf7-bd37-d4e71db7cde4&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;293c4cfa9039bdaab35869e3f275cb438f0f49c94e17d4ec8235e5d0355b8d2b&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+      <responseFile class="java.lang.String"></responseFile>
+      <cookies class="java.lang.String">JSESSIONID=d9831636-1263-4b1a-a3f9-bf450b95d75e.customer-16; SERVERID=03-6MOA6DPVCA43H</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</java.net.URL>
+    </httpSample>
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:52:44 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=86
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+    <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main006de874x5a66x48fax884cxe6966953b83a&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+						&lt;div class=&quot;alertMessage&quot;&gt;Alert: You are not allowed to submit an assignment.&lt;/div&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;									&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:34 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/556ef76b-fad6-4bf7-bd37-d4e71db7cde4&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;293c4cfa9039bdaab35869e3f275cb438f0f49c94e17d4ec8235e5d0355b8d2b&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <cookies class="java.lang.String">JSESSIONID=d9831636-1263-4b1a-a3f9-bf450b95d75e.customer-16; SERVERID=03-6MOA6DPVCA43H</cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <redirectLocation class="java.lang.String">http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</redirectLocation>
+    <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</java.net.URL>
+  </httpSample>
+  <httpSample t="317" it="0" lt="317" ts="1385563964928" s="true" lb="/portal/tool/006de874-5a66-48fa-884c-e6966953b83a" rc="200" rm="OK" tn="STUDENT-JOINS-CLASS-TAKES-TEST 4-128" dt="text" de="UTF-8" by="10313" sc="1" ec="0" ng="23" na="23" hn="ip-10-37-196-224.eu-west-1.compute.internal">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Date: Wed, 27 Nov 2013 14:52:44 GMT
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=EmulateIE9
+Expires: Mon, 01 Jan 2001 00:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=85
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+    <responseData class="java.lang.String">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en_IN&quot; xml:lang=&quot;en_IN&quot;&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot; /&gt;
+    &lt;title&gt;Assignments&lt;/title&gt;
+    &lt;link href=&quot;/library/skin/tool_base.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;link href=&quot;/library/skin/neo-mylabs/tool.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/js/headscripts.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var sakai = sakai || {}; sakai.editor = sakai.editor || {};  sakai.locale = sakai.locale || {};
+sakai.locale.userCountry = &apos;IN&apos;;
+sakai.locale.userLanguage = &apos;en&apos;;
+sakai.locale.userLocale = &apos;en_IN&apos;;
+sakai.editor.collectionId = &apos;/group/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/&apos;;
+sakai.editor.enableResourceSearch = false;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;var CKEDITOR_BASEPATH=&apos;/library/editor/ckeditor/&apos;;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; src=&quot;/library/editor/ckeditor.launch.js&quot;&gt;&lt;/script&gt;
+	
+    
+    	            
+    
+  &lt;/head&gt;
+  &lt;body  onload=&quot;setMainFrameHeight(&apos;Main006de874x5a66x48fax884cxe6966953b83a&apos;);setFocus(focus_path);&quot;  &gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start: chef_assignments_student_view_submission.vm  --&gt;
+&lt;!-- $Id$ --&gt;
+&lt;!-- start:  assignment_macros.vm --&gt;
+&lt;!-- end:  assignment_macros.vm --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/library/js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;link href=&quot;/sakai-assignment-tool/css/assignment.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;  src=&quot;/sakai-assignment-tool/js/assignments.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    setupToggleAreas(&apos;toggleAnchor&apos;, &apos;toggledContent&apos;, false, &apos;fast&apos;);
+    $(&apos;#submissionFileCount&apos;).val(1);
+    $(&apos;#addMoreAttachmentControls&apos;).click(function(e){
+        e.preventDefault();
+        if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+            var $input = $(&apos;#clonableUpload&apos;).clone().removeAttr(&apos;id&apos;).addClass(&apos;cloned&apos;).appendTo(&apos;#clonedHolder&apos;).children(&apos;input&apos;);
+            $input.val(&apos;&apos;);
+            var $count = $(&apos;#submissionFileCount&apos;).val();
+            var $nameCount = &quot;upload&quot;+$count;
+            $input.attr(&quot;name&quot;, $nameCount);
+            $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) + 1);
+            if ($(&apos;#submissionFileCount&apos;).val() == 5) {
+                $(&apos;#addMoreAttachmentControls&apos;).hide();
+                $(&apos;#addMoreAttachmentControlsInactive&apos;).show();
+            }
+        }
+        $(&apos;.cloned a&apos;).show();
+        resizeFrame(&apos;grow&apos;);
+    });
+    
+});
+var notifyDeleteControl = function(){
+    $(&apos;#submissionFileCount&apos;).val(parseInt($(&apos;#submissionFileCount&apos;).val(), 10) - 1);
+    if ($(&apos;#submissionFileCount&apos;).val() &lt; 5) {
+        $(&apos;#addMoreAttachmentControls&apos;).show();
+        $(&apos;#addMoreAttachmentControlsInactive&apos;).hide();
+    }
+};
+
+function submitform(id)
+{
+	var theForm = document.getElementById(id);
+	if(theForm &amp;&amp; theForm.onsubmit)
+	{
+		theForm.onsubmit();
+	}
+	if(theForm &amp;&amp; theForm.submit)
+	{
+		theForm.submit();
+	}
+}
+		
+&lt;/script&gt;
+
+
+&lt;div class=&quot;portletBody&quot;&gt;
+															&lt;h3&gt;Assignment
+																	&lt;span class=&quot;highlight&quot;&gt;
+						 	- In progress
+							&lt;/span&gt;
+										&lt;/h3&gt;
+																					&lt;p class=&quot;instruction&quot;&gt;
+									 Complete the form, then choose the appropriate button at the bottom.
+							&lt;/p&gt;	
+						&lt;table class=&quot;itemSummary&quot;  summary=&quot;The assignment info&quot;&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Title
+					&lt;/th&gt;
+					&lt;td&gt;
+						Assignments
+																	&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;th&gt;
+						Due
+					&lt;/th&gt;
+					&lt;td&gt;
+						11 Jan, 2014 8:00 am
+					&lt;/td&gt;
+				&lt;/tr&gt;
+																					&lt;tr&gt;
+					&lt;th&gt;
+						Status
+					&lt;/th&gt;
+					&lt;td&gt;
+													Not Started
+											&lt;/td&gt;
+				&lt;/tr&gt;
+																			&lt;tr&gt;	
+							&lt;th&gt;
+								Grade Scale
+							&lt;/th&gt;
+							&lt;td&gt;
+								Points
+																	(max 5)
+															&lt;/td&gt;
+						&lt;/tr&gt;
+																						&lt;tr&gt;
+						&lt;th&gt;
+								Modified by instructor
+						&lt;/th&gt;
+						&lt;td&gt;
+							27 Nov, 2013 1:34 pm
+						&lt;/td&gt;
+					&lt;/tr&gt;
+											&lt;/table&gt;
+		&lt;h4&gt;
+			Instructions
+		&lt;/h4&gt;
+		
+					&lt;div class=&quot;textPanel&quot;&gt;&lt;p&gt;  testing&lt;/p&gt;&lt;/div&gt;
+																											&lt;hr class=&quot;itemSeparator&quot; /&gt;
+						&lt;h3&gt;Submission&lt;/h3&gt; 
+		
+
+
+					&lt;form name=&quot;addSubmissionForm&quot; id=&quot;addSubmissionForm&quot; action=&quot;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&quot; method=&quot;post&quot; onsubmit=&quot;return true;&quot; enctype=&quot;multipart/form-data&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;eventSubmit_doRead_add_submission_form&quot; value=&quot;x&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;option&quot; id=&quot;option&quot; value=&quot;cancel&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;currentAttachment&quot; value=&quot;&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;assignmentId&quot; value=&quot;/assignment/a/d1f8fa53-c802-4ae3-b6af-d76ca12162f2/556ef76b-fad6-4bf7-bd37-d4e71db7cde4&quot; /&gt;
+																				
+														&lt;h4&gt;Assignment Text&lt;/h4&gt;
+							&lt;p class=&quot;instruction&quot;&gt;
+																								This assignment allows submissions using both the text box below and attached documents. Type your comments in the box below and use the Add Attachments button to include other documents. Save frequently while working.
+																						&lt;/p&gt;
+							&lt;table border=&quot;0&quot;&gt;
+								&lt;tr&gt;
+									&lt;td&gt;
+										&lt;textarea cols=&quot;80&quot; rows=&quot;30&quot; wrap=&quot;virtual&quot; name=&quot;Assignment.view_submission_text&quot; id=&quot;Assignment.view_submission_text&quot;  &gt;&amp;lt;p&amp;gt;  Class&amp;lt;/p&amp;gt;&lt;/textarea&gt;						
+														&lt;script type=&quot;text/javascript&quot; defer=&quot;1&quot;&gt;sakai.editor.launch(&apos;Assignment.view_submission_text&apos;);&lt;/script&gt;	
+										&lt;/td&gt;
+								&lt;/tr&gt;
+							&lt;/table&gt;
+																														
+																		&lt;div class=&quot;highlightPanel&quot; style=&quot;background:#ffe&quot;&gt;
+					&lt;h3 style=&quot;margin-top:0;margin-bottom:.5em&quot;&gt;
+						Attachments
+					&lt;/h3&gt;	
+																					&lt;p class=&quot;instruction&quot;&gt;No attachments yet&lt;/p&gt;
+																&lt;div class=&quot;highlightPanel specialLink&quot; style=&quot;margin:0;padding-bottom:.5em;background:#fff&quot;&gt;
+																																										&lt;input type=&quot;hidden&quot; name=&quot;submissionFileCount&quot; id=&quot;submissionFileCount&quot; value=&quot;1&quot;/&gt;
+									&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;listHier  centerLines&quot; style=&quot;width:auto;margin:0&quot;&gt;
+										&lt;tr&gt;
+											&lt;td&gt;
+												&lt;span&gt;Select a file from computer&lt;/span&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;div id=&quot;clonableUpload&quot;&gt; 
+													&lt;input type=&quot;file&quot; name=&quot;upload&quot; class=&quot;upload&quot; id=&quot;clonableUpload&quot; onchange=&quot;javascript:showNotif(&apos;submitnotifxxx&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;);document.getElementById(&apos;addSubmissionForm&apos;).action=&apos;http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main&amp;amp;sakai_action=doAttachUpload&apos;;submitform(&apos;addSubmissionForm&apos;);&quot;&quot;/&gt; 
+													&lt;span id=&quot;submitnotifxxx&quot; class=&quot;messageProgress&quot; style=&quot;visibility:hidden&quot;&gt;Uploading file(s)&lt;/span&gt;
+												&lt;/div&gt;
+											&lt;/td&gt;
+											&lt;td&gt;
+												&lt;span class=&quot;navIntraToolLink&quot;&gt;
+													&lt;input
+														class=&quot;disableme enabled&quot; 
+														type=&quot;button&quot; 
+														value=&quot;or select files from workspace or site&quot;
+														name=&quot;attach&quot; 
+														id=&quot;attach&quot;
+														accesskey=&quot;a&quot; 														onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;attach&apos;; document.addSubmissionForm.submit(); return false;&quot;
+													/&gt;
+												&lt;/span&gt;	
+											&lt;/td&gt;
+										&lt;/tr&gt;	
+										&lt;tr&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td id=&quot;clonedHolder&quot;&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;
+											&lt;td&gt;&lt;/td&gt;										
+											&lt;/tr&gt;
+									&lt;/table&gt;	
+									
+																					&lt;/div&gt;
+																							&lt;/div&gt;
+				
+																														&lt;div
+										 class=&quot;act messageInformation&quot;&gt;
+							&lt;input
+								type=&quot;button&quot;
+								class=&quot;active&quot;
+																								name=&quot;post&quot;
+								accesskey=&quot;s&quot;
+								id=&quot;post&quot; 
+								value=&quot;Submit&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;post&apos;,&apos;addSubmissionForm&apos;); document.addSubmissionForm.option.value=&apos;post&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+																	&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;preview&quot; 
+								accesskey=&quot;v&quot;
+								id=&quot;preview&quot; 
+								value=&quot;Preview&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;preview&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;preview&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;input
+								class=&quot;disableme&quot; 
+								type=&quot;button&quot; 
+								name=&quot;save&quot; 
+								accesskey=&quot;d&quot;
+								id=&quot;save&quot; 
+								value=&quot;Save Draft&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();showNotif(&apos;submitnotif&apos;,&apos;save&apos;,&apos;addSubmissionForm&apos;);document.addSubmissionForm.option.value=&apos;save&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+														&lt;input 
+								class=&quot;disableme&quot;
+								type=&quot;button&quot; 
+								name=&quot;cancel&quot;
+								accesskey=&quot;x&quot;
+								id=&quot;cancel&quot; 
+								value=&quot;Cancel&quot;
+								onclick=&quot;document.addSubmissionForm.onsubmit();document.addSubmissionForm.option.value=&apos;cancel&apos;; document.addSubmissionForm.submit(); return false;&quot;
+							/&gt;
+							&lt;span class=&quot;messageInformation&quot;&gt;Don&apos;t forget to save or submit&lt;/span&gt;
+									&lt;span id=&quot;submitnotif&quot; style=&quot;visibility:hidden&quot;&gt;Processing......&lt;/span&gt;
+			&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;sakai_csrf_token&quot; value=&quot;293c4cfa9039bdaab35869e3f275cb438f0f49c94e17d4ec8235e5d0355b8d2b&quot; /&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;
+&lt;!-- end: chef_assignments_student_view_submission.vm  --&gt;
+&lt;/body&gt;&lt;/html&gt;</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <cookies class="java.lang.String">JSESSIONID=d9831636-1263-4b1a-a3f9-bf450b95d75e.customer-16; SERVERID=03-6MOA6DPVCA43H</cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>http://customer-perf.iml.pearson-intl.com/portal/tool/006de874-5a66-48fa-884c-e6966953b83a?panel=Main</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"/>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+
+</testResults>

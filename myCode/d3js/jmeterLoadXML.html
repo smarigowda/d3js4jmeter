@@ -1,45 +1,20 @@
 <!DOCTYPE html>
+<!-- 
+
+    jtl file has to be renamed as .xml
+    
+    Function:
+    
+    > Read the xml file
+    > Filter requests with some criteria. Ex: Filter all HTTP requests having > 5000 ms response time
+
+-->
 <meta charset="utf-8">
 
-<style>
-
-rect:hover {
-        fill: orange;
-}
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: black;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.grid .tick {
-    stroke: lightgrey; opacity: 0.7;
-}
-
-.grid path {
-    stroke-width: 0;
-}
-
-</style>
-
-
 <body>
-<script src="/d3js4jmeter/js/d3.v3.min.js"></script>
-<script src="/d3js4jmeter/js/underscore.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/underscore.js"></script>
+
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
@@ -52,15 +27,23 @@ var results;
 var file_name = GetUrlValue('file_name');
 var folder_name = GetUrlValue('folder_name');
 d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
+	
 		console.log('data read');
         
-        gdata = data;
+        gdata = data; // data is an XML document @ this stage.
         
         console.log(data); // an array of objects, type of Document
         // gdata.__proto__; // Document
-
+        
+        result_1 = d3.select(gdata).selectAll("sample"); // An arrayof array contains all sample elements
+		
+        console.log(result_1);
+        
         //results = d3.select(gdata).selectAll("*")
-        results2 = d3.select(gdata).selectAll("httpSample")[0]; // an array of all http samples
+		
+		console.log(d3.select(gdata).selectAll("httpSample")); // An array of array containing all httpSample elements
+		
+        results2 = d3.select(gdata).selectAll("httpSample")[0]; // An array of all httpsample 
         
         results3 = d3.select(gdata).selectAll("sample")[0]; // an array of all samples
         
@@ -70,8 +53,15 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
         // results3.map(function(d) {return d.attributes.t.value})
         
         console.log(results2);
+		
+		xml3array = _.map(results3, function(d) { return d.attributes; } )
+		
+		xml3array_1 = xml3array.filter(function(d) { return d.lb.nodeValue.match(/^ST.*/)}) // Each object needs to be accesses individually using map. This is a very imp step.
+		
         
-        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500})
+        xml2array = _.map(results2, function(d) { return d } ) // this convers from xml to JavaScript Array Object
+        
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500}) // nested array of objects, JSON
          
         d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; })
         

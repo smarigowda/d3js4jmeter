@@ -7,14 +7,36 @@
 
 
 <body>
-	
-<script src="../../js/d3.v3.min.js"></script>
-<script src="../../js/underscore.js"></script>
+
+<div id="camerastork-widget"/>
+
+<script data-stork-product-id="1234" src="../../js/d3.v3.min.js"></script>
 <script src="../../js/jquery-2.0.3.js"></script>
+<script src="../../myCode/d3js/js/LAB.js"></script>
+
 
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
 <script>
+
+// $LAB.script("../../js/underscore.js").wait()
+
+
+// dynamic loading
+// set async property to true
+
+var sc1 = d3.select('body').append('script')
+    .property('async', 'true')
+    .attr('dataprodid', '1234') // dataset will not add dataprodid.
+    //.on('onload', function() { alert('script loaded...')})
+    //.attr('src', '../../js/underscore.js?prodid=1234');
+    .attr('src', '../../js/underscore.js#prodid=1234');
+
+// sc1 is an array of array
+sc1[0][0].onload = function() { alert('script loaded...'); }
+
+console.log(sc1);
+console.log(d3.selectAll('script')[0][3].onload);
 
 console.log($)
 
@@ -25,15 +47,21 @@ console.log($)
     //$('body').html('ajax complete...')
 }); */
 
-var jqxhr = $.post("http://publisher.dev:8888/myCode/JavaScript/JQueryTemplate.html");
+var jqxhr = $.get("http://localhost:8888/myCode/JavaScript/JQueryTemplate.html", function() { alert('in ajax...')});
 
-jqxhr.done(alert( "done success"));
+// Promise
+jqxhr.done(alert( "done success..."));
 
-jqxhr.always(alert( "always success"));
+// Promise
+jqxhr.always(alert( "always success..."));
 
 
 //d3.select('body').append('text').text('Ajax complete...');
 console.log('end')
+d3.select('div').append('h1').text('h1..')
+
+//$LAB.script("../../js/underscore.js").wait()
+
 
 </script>
 
