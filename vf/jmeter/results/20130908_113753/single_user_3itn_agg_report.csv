@@ -1,0 +1,17 @@
+1378636673972,3611,ST01_COUK_LandingPage,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,73051,0
+1378636677668,10344,ST02_COUK_Click_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,82021,0
+1378636688026,12993,ST03_COUK_Click_LoginNOW,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Prepay 1-1,,true,89098,0
+1378636701028,4382,ST04_Click_Costs_And_Usage,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,38662,0
+1378636705415,4811,ST05_Click_Settings,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,38307,0
+1378636710230,2307,ST06_Click_MyDetails,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,38847,0
+1378636712542,810,ST07_COUK_Logout,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Prepay 1-1,,true,42676,0
+1378636713533,3406,SC02_01_Home_Page,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,355448,0
+1378636716996,1335,SC02_02_Click_Login,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,86023,0
+1378636718343,38823,SC02_03_Login_NOW,200,"Number of samples in transaction : 9, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,463792,0
+1378636757198,6743,SC02_04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,63884,0
+1378636763948,10330,SC02_05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,109681,0
+1378636774294,4047,SC02_06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,50112,0
+1378636778348,5063,SC02_04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,63884,0
+1378636783417,10325,SC02_05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,109681,0
+1378636793753,2777,SC02_06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,50112,0
+1378636796535,1292,SC02_07_Click_Logout,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group - Pay Monthly (Postpay) 1-1,,true,45166,0

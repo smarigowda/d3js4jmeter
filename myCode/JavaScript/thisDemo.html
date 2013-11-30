@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+
+</style>
+
+
+<body>
+
+<h1> Demo of 'this'</h1>
+
+<script src="../../js/d3.v3.min.js"></script>
+<script src="../../js/underscore.js"></script>
+<script src="../../js/jquery-2.0.3.js"></script>
+
+<!-- <script src="../../crossfilter/crossfilter.js"></script> -->
+
+<script>
+
+console.log('hello world!');
+
+var demoObj = { 
+
+        myFun: function () {
+        
+            console.log(this);         
+            var that = this;
+   
+            var innerFun = function () {
+                console.log(this);
+                console.log(that);
+            };
+            
+            innerFun();
+        }
+
+};
+
+demoObj.myFun();
+
+
+var add = function (a, b) {
+       try {
+             if (typeof a !== 'number' || typeof b !== 'number') {
+                 throw {
+                     name: 'TypeError',
+                     message: 'add needs numbers'
+                 }; 
+             }   
+           
+         } catch (e) { console.log('error...'); console.dir(e); }
+         
+    return a + b; 
+}
+
+
+console.log(add(19,23));
+
+add('not a num',4);
+
+
+Function.prototype.method = function (name, func) {
+         console.log('method function...')
+         console.log(this);
+         this.prototype[name] = func;
+         return this;
+};
+
+Number.method('integer', function () {
+        console.log(this);
+        return Math.ceil(this);
+        //return Math[this < 0 ? 'ceil' : 'floor'](this);
+        console.log('integer function...');
+});
+
+console.log((10).integer());
+
+
+
+</script>
+
+</body>
