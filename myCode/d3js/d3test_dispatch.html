@@ -15,6 +15,8 @@
 
 <script>
 
+//"use strict";
+
 var table1 = d3.myd3lib.table();
 
 table1(d3.select('body').selectAll('h1')); // attach to all h1
@@ -42,6 +44,51 @@ table1.on('customHover.sub2',
 
     }
 );
+
+var testfun = function (value) {
+  return (function (copy) {
+    console.log(copy);
+    console.log(value);
+    return copy === value
+  })(value);
+}
+
+var ffun = function (x) {
+  return function (y) {
+    return function (z) {
+      return x + y + z
+    }
+  }
+}
+
+
+function unary (fn) {
+  if (fn.length == 1) {
+    return fn
+  }
+  else return function (something) {
+    return fn.call(this, something)
+  }
+};
+
+var minmax = {
+  min: function (x, y) {
+    if (x < y) {
+      return x
+    }
+    else {
+      return y
+    }
+  } 
+  max: function (x, y) {
+    if (x > y) {
+      return x
+    }
+    else {
+      return y
+    }
+  } 
+}
 
 
 </script>
