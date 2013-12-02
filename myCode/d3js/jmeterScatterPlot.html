@@ -36,7 +36,6 @@ body {
 
 </style>
 
-
 <body>
 <script src="../../js/d3.v3.min.js"></script>
 <script src="../../js/underscore.js"></script>
@@ -79,7 +78,8 @@ var yAxis = d3.svg.axis()
 
 // get the file name from URL
 // aggregate_report3.csv
-var file_name = GetUrlValue('file_name');
+// var file_name = GetUrlValue('file_name');
+file_name = 'test_001_all_aggregate_for_analysis.csv'
 
 console.log('file_name');
 
@@ -126,7 +126,6 @@ d3.csv("./data/prson/".concat(file_name), function(data) {
                         .attr("height", height + margin.top + margin.bottom)
                         .append("g")
                         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
     // draw x axis          
     svg.append("g")
       .attr("class", "x axis")
@@ -143,8 +142,6 @@ d3.csv("./data/prson/".concat(file_name), function(data) {
 		    return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(-90)"; })
 		    //console.log(this.getBBox());
             //return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(0)"; */
-
-
     // draw y axis
     svg.append("g")
       .attr("class", "y axis")

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="5743" it="351" lt="0" ts="1380142102535" s="true" lb="ST01_COUK_LandingPage" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="70804" ng="1" na="1">
+  <sample t="1074" it="271" lt="0" ts="1380142102535" s="true" lb="/" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="10768" ng="1" na="1">
+    <httpSample t="1074" it="0" lt="995" ts="1380142102795" s="true" lb="/" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="10768" ng="1" na="1">
+      <assertionResult>
+        <name>Response Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+  <sample t="4669" it="80" lt="0" ts="1380142103880" s="true" lb="/vodafoneuk/tman.cgi/tmpageid=9&amp;levyouruid=0.08825104522671279&amp;tmsecmode=N&amp;pageName=PayG%2520%2526%2520Contract%2520Mobile%2520Phone%2520Deals%252C%2520SIMs%2520%2526%2520Mobile%2520Internet%25A0%25u2013%2520Vodafone&amp;tmtag=js" rc="200" rm="Number of samples in transaction : 15, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="60036" ng="1" na="1">
+    <httpSample t="735" it="0" lt="735" ts="1380142103889" s="true" lb="/vodafoneuk/tman.cgi/tmpageid=9&amp;levyouruid=0.08825104522671279&amp;tmsecmode=N&amp;pageName=PayG%2520%2526%2520Contract%2520Mobile%2520Phone%2520Deals%252C%2520SIMs%2520%2526%2520Mobile%2520Internet%25A0%25u2013%2520Vodafone&amp;tmtag=js" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="3842" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="1046" it="0" lt="1046" ts="1380142104632" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="225" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="40" it="0" lt="40" ts="1380142105679" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="227" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="37" it="0" lt="37" ts="1380142105720" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="218" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="36" it="0" lt="35" ts="1380142105758" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="1809" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="29" it="0" lt="29" ts="1380142105795" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="226" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="39" it="0" lt="39" ts="1380142105825" s="true" lb="/m2/vodafoneuk/mbox/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="226" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="44" it="0" lt="44" ts="1380142105866" s="true" lb="/m2/vodafoneuk/sc/standard" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="277" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="49" it="0" lt="49" ts="1380142105912" s="true" lb="/vodafoneuk/tman.cgi/tmpageid=9&amp;levyouruid=0.08825104522671279&amp;tmsecmode=N&amp;pageName=PayG%2520%2526%2520Contract%2520Mobile%2520Phone%2520Deals%252C%2520SIMs%2520%2526%2520Mobile%2520Internet%25A0%25u2013%2520Vodafone&amp;tmad=c&amp;tmcampid=1&amp;tmdom=1&amp;tmbtpos=0&amp;tmtag=image" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="bin" by="808" ng="1" na="1">
+      <cookies class="java.lang.String">TMS=2#; LGP=1/:&amp;&apos;()*+,-./01DDBEKDFJIIINQTQQRQVGVeVV\X[MNOP`chafemej</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="1420" it="0" lt="542" ts="1380142105969" s="true" lb="/event/img" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="bin" by="5002" ng="1" na="1">
+      <httpSample t="542" it="0" lt="542" ts="1380142105969" s="true" lb="http://pixel.mathtag.com/event/img?mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=" rc="302" rm="Moved Temporarily" tn="" dt="bin" by="797" ng="0" na="0">
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://pixel.mathtag.com/event/img?mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc</redirectLocation>
+      </httpSample>
+      <httpSample t="27" it="0" lt="27" ts="1380142106515" s="true" lb="http://pixel.mathtag.com/event/img?mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="" by="721" ng="0" na="0">
+        <cookies class="java.lang.String">HRL8=CT; uuid=aade5243-4c1a-4d00-88d1-0e4435d31bc8</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://ak1.abmr.net/is/pixel.mathtag.com?U=/event/img&amp;V=3-4KFiIE%2fS7v9eHBNXhvdEnmYG+W3PF8OFZNWLarWNAi09h3hywjUPwA%3d%3d&amp;I=FB48CC3177EE503&amp;D=mathtag.com&amp;01AD=1&amp;mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc</redirectLocation>
+      </httpSample>
+      <httpSample t="69" it="0" lt="69" ts="1380142106553" s="true" lb="http://ak1.abmr.net/is/pixel.mathtag.com?U=/event/img&amp;V=3-4KFiIE%2fS7v9eHBNXhvdEnmYG+W3PF8OFZNWLarWNAi09h3hywjUPwA%3d%3d&amp;I=FB48CC3177EE503&amp;D=mathtag.com&amp;01AD=1&amp;mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="" by="831" ng="0" na="0">
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://pixel.mathtag.com/event/img?01AD=3lWJlRVsISC_h0mhXYqaqLuZLgHu5SpuDOpG0uFdQetqlSqd_MWtHMw&amp;01RI=FB48CC3177EE503&amp;01NA=na&amp;mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc</redirectLocation>
+      </httpSample>
+      <httpSample t="42" it="0" lt="42" ts="1380142106623" s="true" lb="http://pixel.mathtag.com/event/img?01AD=3lWJlRVsISC_h0mhXYqaqLuZLgHu5SpuDOpG0uFdQetqlSqd_MWtHMw&amp;01RI=FB48CC3177EE503&amp;01NA=na&amp;mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="bin" by="725" ng="0" na="0">
+        <cookies class="java.lang.String">uuid=aade5243-4c1a-4d00-88d1-0e4435d31bc8; HRL8=CT-1</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://cm.g.doubleclick.net/pixel?google_nid=mediamath&amp;google_cm&amp;google_hm=qt5SQ0waTQCI0Q5ENdMbyA</redirectLocation>
+      </httpSample>
+      <httpSample t="687" it="0" lt="687" ts="1380142106674" s="true" lb="http://cm.g.doubleclick.net/pixel?google_nid=mediamath&amp;google_cm&amp;google_hm=qt5SQ0waTQCI0Q5ENdMbyA" rc="302" rm="Found" tn="Thread Group - Prepay 1-1" dt="text" by="1033" ng="0" na="0">
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://cm.g.doubleclick.net/pixel?google_nid=mediamath&amp;google_cm=&amp;google_hm=qt5SQ0waTQCI0Q5ENdMbyA&amp;google_tc=</redirectLocation>
+      </httpSample>
+      <httpSample t="27" it="0" lt="27" ts="1380142107362" s="true" lb="http://cm.g.doubleclick.net/pixel?google_nid=mediamath&amp;google_cm=&amp;google_hm=qt5SQ0waTQCI0Q5ENdMbyA&amp;google_tc=" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="bin" by="895" ng="0" na="0">
+        <cookies class="java.lang.String">test_cookie=CheckForPermission</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+      </httpSample>
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">http://pixel.mathtag.com/event/img?mt_id=150251&amp;mt_adid=106007&amp;v1=PayG%20&amp;%20Contract%20Mobile%20Phone%20Deals,%20SIMs%20&amp;%20Mobile%20Internet%C2%A0%E2%80%93%20Vodafone&amp;v2=&amp;v3=&amp;s1=&amp;s2=&amp;s3=&amp;mm_bnc</redirectLocation>
+    </httpSample>
+    <httpSample t="84" it="0" lt="84" ts="1380142107399" s="true" lb="/pix.aspx" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="1553" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="656" it="0" lt="629" ts="1380142107494" s="true" lb="/b/ss/vodafonegroupukprod/1/H.25.5/s94243370079581" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="bin" by="2009" ng="1" na="1">
+      <httpSample t="629" it="0" lt="629" ts="1380142107494" s="true" lb="http://metrics.vodafone.co.uk/b/ss/vodafonegroupukprod/1/H.25.5/s94243370079581?AQB=1&amp;ndh=1&amp;t=3%2F6%2F2013%2022%3A7%3A52%203%20-60&amp;fid=5DD18460193F6DE2-37151925C09B0ABE&amp;ce=UTF-8&amp;ns=vodafoneuk&amp;cdp=3&amp;pageName=UK%3AUCMS&amp;g=http%3A%2F%2Fwww.vodafone.co.uk%2F&amp;cc=GBP&amp;ch=VodafoneGeneric&amp;server=www.vodafone.co.uk&amp;events=event3&amp;c4=www.vodafone.co.uk%2F&amp;v5=D%3Dc6&amp;c6=uk&amp;v10=Repeat&amp;c11=3&amp;c24=D%3Ds_vi&amp;v28=D%3DpageName&amp;c39=94393&amp;c42=41&amp;h1=UK%2F&amp;tnt=144475%3A32%3A1%2C&amp;s=1440x900&amp;c=24&amp;j=1.8.5&amp;v=Y&amp;k=Y&amp;bw=1101&amp;bh=711&amp;pid=UK%3AUCMS&amp;pidt=1&amp;oid=https%3A%2F%2Fwww.vodafone.co.uk%2Fmyvodafone%2Ffaces%2Fhome_2&amp;oidt=1&amp;ot=A&amp;oi=1&amp;AQE=1" rc="302" rm="Found" tn="" dt="text" by="1302" ng="0" na="0">
+        <cookies class="java.lang.String"></cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">http://metrics.vodafone.co.uk/b/ss/vodafonegroupukprod/1/H.25.5/s94243370079581?AQB=1&amp;pccr=true&amp;vidn=2921A60E053091A2-40000303C0183C33&amp;&amp;ndh=1&amp;t=3%2F6%2F2013%2022%3A7%3A52%203%20-60&amp;fid=5DD18460193F6DE2-37151925C09B0ABE&amp;ce=UTF-8&amp;ns=vodafoneuk&amp;cdp=3&amp;pageName=UK%3AUCMS&amp;g=http%3A%2F%2Fwww.vodafone.co.uk%2F&amp;cc=GBP&amp;ch=VodafoneGeneric&amp;server=www.vodafone.co.uk&amp;events=event3&amp;c4=www.vodafone.co.uk%2F&amp;v5=D%3Dc6&amp;c6=uk&amp;v10=Repeat&amp;c11=3&amp;c24=D%3Ds_vi&amp;v28=D%3DpageName&amp;c39=94393&amp;c42=41&amp;h1=UK%2F&amp;tnt=144475%3A32%3A1%2C&amp;s=1440x900&amp;c=24&amp;j=1.8.5&amp;v=Y&amp;k=Y&amp;bw=1101&amp;bh=711&amp;pid=UK%3AUCMS&amp;pidt=1&amp;oid=https%3A%2F%2Fwww.vodafone.co.uk%2Fmyvodafone%2Ffaces%2Fhome_2&amp;oidt=1&amp;ot=A&amp;oi=1&amp;AQE=1</redirectLocation>
+      </httpSample>
+      <httpSample t="26" it="0" lt="26" ts="1380142108124" s="true" lb="http://metrics.vodafone.co.uk/b/ss/vodafonegroupukprod/1/H.25.5/s94243370079581?AQB=1&amp;pccr=true&amp;vidn=2921A60E053091A2-40000303C0183C33&amp;&amp;ndh=1&amp;t=3%2F6%2F2013%2022%3A7%3A52%203%20-60&amp;fid=5DD18460193F6DE2-37151925C09B0ABE&amp;ce=UTF-8&amp;ns=vodafoneuk&amp;cdp=3&amp;pageName=UK%3AUCMS&amp;g=http%3A%2F%2Fwww.vodafone.co.uk%2F&amp;cc=GBP&amp;ch=VodafoneGeneric&amp;server=www.vodafone.co.uk&amp;events=event3&amp;c4=www.vodafone.co.uk%2F&amp;v5=D%3Dc6&amp;c6=uk&amp;v10=Repeat&amp;c11=3&amp;c24=D%3Ds_vi&amp;v28=D%3DpageName&amp;c39=94393&amp;c42=41&amp;h1=UK%2F&amp;tnt=144475%3A32%3A1%2C&amp;s=1440x900&amp;c=24&amp;j=1.8.5&amp;v=Y&amp;k=Y&amp;bw=1101&amp;bh=711&amp;pid=UK%3AUCMS&amp;pidt=1&amp;oid=https%3A%2F%2Fwww.vodafone.co.uk%2Fmyvodafone%2Ffaces%2Fhome_2&amp;oidt=1&amp;ot=A&amp;oi=1&amp;AQE=1" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="bin" by="707" ng="0" na="0">
+        <cookies class="java.lang.String">s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+      </httpSample>
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">http://metrics.vodafone.co.uk/b/ss/vodafonegroupukprod/1/H.25.5/s94243370079581?AQB=1&amp;pccr=true&amp;vidn=2921A60E053091A2-40000303C0183C33&amp;&amp;ndh=1&amp;t=3%2F6%2F2013%2022%3A7%3A52%203%20-60&amp;fid=5DD18460193F6DE2-37151925C09B0ABE&amp;ce=UTF-8&amp;ns=vodafoneuk&amp;cdp=3&amp;pageName=UK%3AUCMS&amp;g=http%3A%2F%2Fwww.vodafone.co.uk%2F&amp;cc=GBP&amp;ch=VodafoneGeneric&amp;server=www.vodafone.co.uk&amp;events=event3&amp;c4=www.vodafone.co.uk%2F&amp;v5=D%3Dc6&amp;c6=uk&amp;v10=Repeat&amp;c11=3&amp;c24=D%3Ds_vi&amp;v28=D%3DpageName&amp;c39=94393&amp;c42=41&amp;h1=UK%2F&amp;tnt=144475%3A32%3A1%2C&amp;s=1440x900&amp;c=24&amp;j=1.8.5&amp;v=Y&amp;k=Y&amp;bw=1101&amp;bh=711&amp;pid=UK%3AUCMS&amp;pidt=1&amp;oid=https%3A%2F%2Fwww.vodafone.co.uk%2Fmyvodafone%2Ffaces%2Fhome_2&amp;oidt=1&amp;ot=A&amp;oi=1&amp;AQE=1</redirectLocation>
+    </httpSample>
+    <httpSample t="255" it="0" lt="100" ts="1380142108160" s="true" lb="/visitor/addons/deploy.asp" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="21320" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="91" it="0" lt="43" ts="1380142108417" s="true" lb="/hcp/html/mTag.js" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="17840" ng="1" na="1">
+      <cookies class="java.lang.String">ASPSESSIONIDQCTRTTSR=ALHJGDLCJNGLIBLEBPHEJAJL</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="108" it="0" lt="76" ts="1380142108516" s="true" lb="/hc/90571995/" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="4454" ng="1" na="1">
+      <cookies class="java.lang.String"></cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+</sample>
+<sample t="1659" it="11" lt="0" ts="1380142108637" s="true" lb="ST02_COUK_Click_Login" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="82331" ng="1" na="1">
+  <sample t="1027" it="10" lt="0" ts="1380142108637" s="true" lb="/myvodafone/faces/home" rc="200" rm="Number of samples in transaction : 4, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="34875" ng="1" na="1">
+    <assertionResult>
+      <name>Duration Assertion</name>
+      <failure>false</failure>
+      <error>false</error>
+    </assertionResult>
+    <httpSample t="593" it="0" lt="547" ts="1380142108643" s="true" lb="/myvodafone/faces/home" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="4481" ng="1" na="1">
+      <assertionResult>
+        <name>Duration Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <sample t="1" it="0" lt="0" ts="1380142109235" s="true" lb="AFR_LOOP_1 = 233162316743000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="1338" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="280" it="0" lt="129" ts="1380142109237" s="true" lb="/myvodafone/faces/home" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="7894" ng="1" na="1">
+      <assertionResult>
+        <name>Duration Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <httpSample t="129" it="0" lt="129" ts="1380142109237" s="true" lb="https://www.vodafone.co.uk/myvodafone/faces/home?_afrLoop=233162316743000&amp;_afrWindowMode=0&amp;_afrWindowId=null" rc="302" rm="Moved Temporarily" tn="" dt="text" by="880" ng="0" na="0">
+        <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/myvodafone/adfAuthentication?success_url=/faces/home&amp;_afrLoop=233162490651000</redirectLocation>
+      </httpSample>
+      <httpSample t="65" it="0" lt="65" ts="1380142109367" s="true" lb="https://www.vodafone.co.uk/myvodafone/adfAuthentication?success_url=/faces/home&amp;_afrLoop=233162490651000" rc="302" rm="Found" tn="Thread Group - Prepay 1-1" dt="text" by="953" ng="0" na="0">
+        <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+        <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/oam/server/obrareq.cgi?wh%3DlivePortalWebgate10g%20wu%3D%2Fmyvodafone%2FadfAuthentication%3Fsuccess_url%3D%2Ffaces%2Fhome%26_afrLoop%3D233162490651000%20wo%3D1%20rh%3Dhttps%3A%2F%2Fwww.vodafone.co.uk%20ru%3D%252Fmyvodafone%252FadfAuthentication%20rq%3Dsuccess_url%253D%252Ffaces%252Fhome%2526_afrLoop%253D233162490651000</redirectLocation>
+      </httpSample>
+      <httpSample t="82" it="0" lt="82" ts="1380142109433" s="true" lb="https://www.vodafone.co.uk/oam/server/obrareq.cgi?wh%3DlivePortalWebgate10g%20wu%3D%2Fmyvodafone%2FadfAuthentication%3Fsuccess_url%3D%2Ffaces%2Fhome%26_afrLoop%3D233162490651000%20wo%3D1%20rh%3Dhttps%3A%2F%2Fwww.vodafone.co.uk%20ru%3D%252Fmyvodafone%252FadfAuthentication%20rq%3Dsuccess_url%253D%252Ffaces%252Fhome%2526_afrLoop%253D233162490651000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="4546" ng="0" na="0">
+        <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356</cookies>
+        <method class="java.lang.String">GET</method>
+        <queryString class="java.lang.String"></queryString>
+      </httpSample>
+      <sample t="0" it="0" lt="0" ts="1380142109517" s="true" lb="AFR_LOOP_2 = 233162490651000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="1515" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/myvodafone/adfAuthentication?success_url=/faces/home&amp;_afrLoop=233162490651000</redirectLocation>
+    </httpSample>
+    <httpSample t="60" it="0" lt="60" ts="1380142109518" s="true" lb="/myvodafone/adfAuthentication" rc="302" rm="Found" tn="Thread Group - Prepay 1-1" dt="text" by="953" ng="1" na="1">
+      <assertionResult>
+        <name>Duration Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_REQ=VERSION_4~FGA%2b1HfJMQubU5%2fkoXjkQ1f2xDTVa6f%2fpKZXJXa5NgnbBpUxgOvxWUzxFxBGeAi2vTegBUXKcJiEUbPyoEfV%2fa8Z4hw2WUTBBG68MAaVZ77sugmr33bvmPTm5heNQcKzx2S1khOxMV6Wz06OsRrEPo0bPNULJrrUBymew9yoH3GS9b%2bxVjpMb5uSmQm3MhTvUC0TTCUM52VeS69CqM0HkhrGtUIkaTsERnGiVJkdJeJzxk9Y61LOH5ENldfGSXviZAI3W8dhPQyL%2b%2fHDtIk6vbM6VZkizKxd1P6unstkkK90X1tSupIh6tiIUDr9QWYqD2xRcqh1j50aKLHDm4eDrixjoDQD7069YdtIlEbi3Yab173Nwo%2bUt%2bD7TESYC7y7OsoTgMKz8A%2bIaPEuSdHEJr%2bNc6u3qP7Tk3VjqIUh2P7SwblHeZczAnIRVULBzmJTb%2bsk5lhy3WhxONJHReUpAMr82im6j445BgUNUmxURdoegwMIDkgP4h5annqDPRnmAZLvVDjIpkmFwsk8TuikWcjjslOUOVSoEHwWMoSP%2bvTjALeFL9xf9WQ90nHpQ14vluW%2fkK9L%2b6YMVqQn0xMnzLMyWEL67%2bHQnc56d%2fT1nivz0w%2bN3xzcthry1RzfV0QQhPtAkF%2bN4UjauLFBjbVbJhow4ppwElpxC%2bijbban4SrYBHi8pLQ1tUbtmXvjt8je8H7mtIuy9e%2fLixP4nQ%2flCuTJc7npglTr1aKkW54EzJA6fGxF9eUorl%2fzZpEk6D5VrW0REiQRUMSQ6rXYuw%2fhzSdaXeDVRRLlDDITRUQAiMEg4U%2bjmG1ZlXC3ZqwiRM%2bXkoFs7mV2N64Uzarx3vY2a27hj%2fIemcPQtkc9Ha%2bHW%2fNUlNYy0Tfd2KDJrvLHE5RHVsn4tazdkcUsCh%2bSSw%2fxoW3JDvP5JqMq3%2fO8unFkbjXLlOLirfkiNaX7VOeZrrjvTV%2fGaINWxD0IGn3KY%2bxvbiCx0trSqo6tAbHMVWY0P9PlRUzcUyhtVooLAnpTN2cWEyc26DYnnmVTOyYkIQ7%2fsU4Tp3912Q6lMxJHf5%2f0VezrPuaeBNfIa9k7zwAkaOITpN4fF813GAekJS5XByez2ogJa8xmXqyertSdQafEKB%2bn36N0Ij0ecoiaOmnXfPcxDkQW895O6FVc7ksx5frbv4n8%2fuXYN9pdSDAsfHcS7amtM5%2fqY9%2bJGDZlhMnP8HuEoyVqdHm2YHDzlj8Kc2ezD99BayoXN7e6CWHLvB%2fvBuN0VsEM%2b9SqpEdHMmfHtCqLPfztlCh7JFnwZNhGelijq4CaiXEzvq8plqUJh%2bIsoWTEGGFkEWzCbcyCLZMVb9R75Y2KKsMpuVjzrT9mCKwwoY6OynbFmGNc%2bUTxez9nFejc875516Rm1%2fvFkmlNhuT7P9tTvUfOvGpcbQApP8CGEAnhaqrDPtJmT1cM5X5zhecwizap7MZoBrp0FrB%2be8dRlw%2bekfPGsKZbveZW%2fuCPKGipV5wrm7O7b77ckAIBSr9sW593a%2b%2frpzWbORI57Mg8J%2bSaDRjByJuIeVQ56otPRnqTniW3yEbFQiuYSAmW9apNa2nlG3iblr%2fFpQ2%2fKv6qObE9m%2fJ7uKwoDPbX4Qzdu6xWnjtwFO%2bzV4Bd3%2ftHHZrrJriAyw%2bJgnHSqFRPZ8LR3MDajC8I9yTM6cSQ%2bWq2UkcmC%2fMGWTEIskFMnrA3xTk1Kdju6oXcpVWLFh55aPqsbBkPMvpCxW2OAw6TzBwZIZzQH3zOT%2fYJkd2%2bQme2S5ISs0GTfhi4VooVJBBF%2bYZHMnRW8G%2bGM0nG%2fA6QngU4Fu4dzOqnrk%2fD30uH5GB4XG7Wxm92heEcHaBpOxNxnmq%2fD%2b7ZLctLiRR4SGK5G4kIw7vNiBB%2fUmDbmYiyMfrEiNnJDz6yB58A4hYF7LWLowWCpsGeNirJk2rPHGc0fGd8lYUQ8WMWRW8c%2b36XtoB1TcFUz5aveAUSVlQ22xYywIL9eBaBAYdmp0jcrCGC6JrxeY%2bP0QabPUQvIbpaVg6uTg4%3d</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/oam/server/obrareq.cgi?wh%3DlivePortalWebgate10g%20wu%3D%2Fmyvodafone%2FadfAuthentication%3Fsuccess_url%3D%2Ffaces%2Fhome%26_afrLoop%3D233162490651000%20wo%3D1%20rh%3Dhttps%3A%2F%2Fwww.vodafone.co.uk%20ru%3D%252Fmyvodafone%252FadfAuthentication%20rq%3Dsuccess_url%253D%252Ffaces%252Fhome%2526_afrLoop%253D233162490651000</redirectLocation>
+    </httpSample>
+    <httpSample t="94" it="0" lt="90" ts="1380142109580" s="true" lb="/oam/server/obrareq.cgi" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="21547" ng="1" na="1">
+      <assertionResult>
+        <name>Duration Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <sample t="0" it="0" lt="0" ts="1380142109671" s="true" lb="OAM_REQ_VALUE = VERSION_4~u0zTb1by%2fwDe%2fdaHxdm6kRPWTo9kydObpMmc9bGyCh%2bq4N7ZXj9mkipoXCjsq5u5Gy6p%2flMICFrOzO6fs5LvyE7ShMkE8FSoLbaEbIG39HKUZFX5X6188GBetlk7MHQA16A1Hmx005dK97GCwMI%2b%2bs0Ko7o6KzkEi1mMnGrKaiVlfu%2fkdm9BOTq2O7Me%2fqzmWj3MRtvAbR9UPd%2b4FsHxA0U8ANEex43TeUj4FHlicETQ4S8vORv%2fYWYXztcwAny1kGE6kpWHmcrsYHu5aaL%2f9w5Sxwz4EM2fC4BGbz4wM0fw%2b6Xosq7Y2b%2fE2bUblFtaWPF99q8T3tbGKWk0%2fY6AdbCfj8vo8VtK3W%2bem9AShkh01qAJHIns4lQrZKYaPp649gkJzA9%2bdevNlZsY92zBm3Dto3ln4SCfcNX9%2bY5GPo7PkHsUCp9JFrSpEMFguCBlBd%2bz%2bZ%2bjy1W5Dr%2b2iOJlz9liVJ2pSllr%2fGMQ1z1CDjo%2fzPAE6PEBH8pnui7F36vuqEK7%2fwVk7rStao0y6b6p6PXbYrgaeEFEUIGys5Eik%2fWsJl%2bCnnqUuGtHzy6P0A%2blWIzERS0GFPDiK0cm648MUhk%2beKXS3EUiRDjc%2bQJg1Bru9zku2Hc8iQIcUN6J4vfvha%2f1MaDReC5ig3HL11dnRbeNK6MPwM%2bs97t5eAxSeIZbh0XuR9k0tk5RURf%2bx%2b7TFrvy8%2bvzXFwJNe1smwVSR1ixKEcHPkkRi3pBkuiK7ZdgkuRRNfW4plmokdi%2b7Mf4sQDfUp7zljfsZbJMTLhfgoPaW2FSrBW40hPY%2bJ9rCByvSeso4nb9Eyca%2f8SDykceKQlFbX%2bwicP2hVVRgQhoGdAM3IVYrESFd1Nmx7ZoAFgMlA5PQz9RDwigkHDlJDfjOOmxFsrjuLOC0%2bxv3Og62mr%2fTA2L%2bu1slSJfQ7x68slx7CUcwbBq885VjuhRkiCoVG1Ml1omTq5X9tV2sdVoieOnbOJxwuEZJ%2fi28tWBj%2f7Mv8nx51XytLMEzVg7dQUoUAbABhq5k%2f4LCDwz%2fDEFlfPdCJhUJbGWANzhQg5gNfUTDaJ%2f4lzYM8sFVmg2HnvCQo%2f4pgc3k5lLesW2H2Sv6YF6okCP40ke%2fOfpJqeXQRLV9wzGKLqZBZ%2fNoDj6R6NoHy0Z79T4%2bryAePJCj3QyHZcvalY5tIXrVBE%2fZAOG7tpENd9%2f1GfYnfDrg7Y47b6I9m3hZnIR7eJvgJ8Wnuj4NpZN3hR0KQQAg%2foPa3FlilHVy71LHAthmvWYB94GMWbT2MALzT4bDVAu6%2fKZeTuTnjh2X1yR67%2bdTeZrx1FRb3RQE68Tv4aTAwWAKwUG0QNewpg5koM2WcaJq7XKI3VmKTl4mhDIQRIBLTHU8uaPN2bBDQtM3qiia85GMEIAOi7GuG7ZR%2bN4bEDFP%2bPA5U%2fsFV7LFzP1eX0e7%2fhPAhToKtFAkU0hdIPDLchTv0yUxJJjHsFuEdyP%2f4%2b4HdZKAASzYqb%2fCUb8YXSKkxXoMHia3Mx2zieYylMCglW6YolrgJLEjWmyrRB7kp8Bg5qCeThC2i4Kook7S27I1kQKD5DVmLX3fH9aOQ0HCK2AorY2BldXSDuqwzHJZmYV2x%2bjJQUSIiUzD68aoPbOF4Omr2zpTYLHSJopPevBnh4YhT0PgRZjxHD%2bSLwLuNMMNGoGGNgGxjMmxZZBdpIWhzexe9nIvdCf5O%2fPs%2f6aB76p8%2f5KP9Sv49ddKNxSu7Am2GzVusLtveyisP1ziKeRCuNCIIVHwMRouNOGF4IzjbhHAMwwgxVexOsrrj%2fT3T%2fJidgOtJMrVQT8UrcwAU2wxOVKw%2b1M2cbGbrP0C1xHZWQ%2bdyLAetJSmpNfO4oDYQczltaOGKf2c0%2blCQPaDpeWbT3zR7z3M2UhT5Q%2flL19FmlhYclzm6CRkMufQYnBjo9TiQnKcWfHGvFopxPnPOiNvnWgxkeBdSmdHyZm8xYLwHtGuTw2jsUkIFnUNuGQke9vvCcpJBrj7tljgHC2LasHzNzc9l37nac%3d" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="8407" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <sample t="0" it="0" lt="0" ts="1380142109674" s="true" lb="REQUEST_ID = -9140035047928496018" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="8581" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_REQ=VERSION_4~FGA%2b1HfJMQubU5%2fkoXjkQ1f2xDTVa6f%2fpKZXJXa5NgnbBpUxgOvxWUzxFxBGeAi2vTegBUXKcJiEUbPyoEfV%2fa8Z4hw2WUTBBG68MAaVZ77sugmr33bvmPTm5heNQcKzx2S1khOxMV6Wz06OsRrEPo0bPNULJrrUBymew9yoH3GS9b%2bxVjpMb5uSmQm3MhTvUC0TTCUM52VeS69CqM0HkhrGtUIkaTsERnGiVJkdJeJzxk9Y61LOH5ENldfGSXviZAI3W8dhPQyL%2b%2fHDtIk6vbM6VZkizKxd1P6unstkkK90X1tSupIh6tiIUDr9QWYqD2xRcqh1j50aKLHDm4eDrixjoDQD7069YdtIlEbi3Yab173Nwo%2bUt%2bD7TESYC7y7OsoTgMKz8A%2bIaPEuSdHEJr%2bNc6u3qP7Tk3VjqIUh2P7SwblHeZczAnIRVULBzmJTb%2bsk5lhy3WhxONJHReUpAMr82im6j445BgUNUmxURdoegwMIDkgP4h5annqDPRnmAZLvVDjIpkmFwsk8TuikWcjjslOUOVSoEHwWMoSP%2bvTjALeFL9xf9WQ90nHpQ14vluW%2fkK9L%2b6YMVqQn0xMnzLMyWEL67%2bHQnc56d%2fT1nivz0w%2bN3xzcthry1RzfV0QQhPtAkF%2bN4UjauLFBjbVbJhow4ppwElpxC%2bijbban4SrYBHi8pLQ1tUbtmXvjt8je8H7mtIuy9e%2fLixP4nQ%2flCuTJc7npglTr1aKkW54EzJA6fGxF9eUorl%2fzZpEk6D5VrW0REiQRUMSQ6rXYuw%2fhzSdaXeDVRRLlDDITRUQAiMEg4U%2bjmG1ZlXC3ZqwiRM%2bXkoFs7mV2N64Uzarx3vY2a27hj%2fIemcPQtkc9Ha%2bHW%2fNUlNYy0Tfd2KDJrvLHE5RHVsn4tazdkcUsCh%2bSSw%2fxoW3JDvP5JqMq3%2fO8unFkbjXLlOLirfkiNaX7VOeZrrjvTV%2fGaINWxD0IGn3KY%2bxvbiCx0trSqo6tAbHMVWY0P9PlRUzcUyhtVooLAnpTN2cWEyc26DYnnmVTOyYkIQ7%2fsU4Tp3912Q6lMxJHf5%2f0VezrPuaeBNfIa9k7zwAkaOITpN4fF813GAekJS5XByez2ogJa8xmXqyertSdQafEKB%2bn36N0Ij0ecoiaOmnXfPcxDkQW895O6FVc7ksx5frbv4n8%2fuXYN9pdSDAsfHcS7amtM5%2fqY9%2bJGDZlhMnP8HuEoyVqdHm2YHDzlj8Kc2ezD99BayoXN7e6CWHLvB%2fvBuN0VsEM%2b9SqpEdHMmfHtCqLPfztlCh7JFnwZNhGelijq4CaiXEzvq8plqUJh%2bIsoWTEGGFkEWzCbcyCLZMVb9R75Y2KKsMpuVjzrT9mCKwwoY6OynbFmGNc%2bUTxez9nFejc875516Rm1%2fvFkmlNhuT7P9tTvUfOvGpcbQApP8CGEAnhaqrDPtJmT1cM5X5zhecwizap7MZoBrp0FrB%2be8dRlw%2bekfPGsKZbveZW%2fuCPKGipV5wrm7O7b77ckAIBSr9sW593a%2b%2frpzWbORI57Mg8J%2bSaDRjByJuIeVQ56otPRnqTniW3yEbFQiuYSAmW9apNa2nlG3iblr%2fFpQ2%2fKv6qObE9m%2fJ7uKwoDPbX4Qzdu6xWnjtwFO%2bzV4Bd3%2ftHHZrrJriAyw%2bJgnHSqFRPZ8LR3MDajC8I9yTM6cSQ%2bWq2UkcmC%2fMGWTEIskFMnrA3xTk1Kdju6oXcpVWLFh55aPqsbBkPMvpCxW2OAw6TzBwZIZzQH3zOT%2fYJkd2%2bQme2S5ISs0GTfhi4VooVJBBF%2bYZHMnRW8G%2bGM0nG%2fA6QngU4Fu4dzOqnrk%2fD30uH5GB4XG7Wxm92heEcHaBpOxNxnmq%2fD%2b7ZLctLiRR4SGK5G4kIw7vNiBB%2fUmDbmYiyMfrEiNnJDz6yB58A4hYF7LWLowWCpsGeNirJk2rPHGc0fGd8lYUQ8WMWRW8c%2b36XtoB1TcFUz5aveAUSVlQ22xYywIL9eBaBAYdmp0jcrCGC6JrxeY%2bP0QabPUQvIbpaVg6uTg4%3d</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+  <sample t="632" it="1" lt="0" ts="1380142109674" s="true" lb="/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page1.jspx" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="47456" ng="1" na="1">
+    <httpSample t="632" it="0" lt="466" ts="1380142109675" s="true" lb="/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page1.jspx" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="47456" ng="1" na="1">
+      <assertionResult>
+        <name>Response Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <sample t="0" it="0" lt="0" ts="1380142110294" s="true" lb="JSF_VIEW_STATE_1= !2xw079g2z" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="10821" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <sample t="0" it="0" lt="0" ts="1380142110295" s="true" lb="ADF_CTRL_STATE = w3kpetosg_9" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="10955" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <sample t="1" it="0" lt="0" ts="1380142110306" s="true" lb="WINDOWID_1 = w3kpetosg_6" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11080" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_REQ=VERSION_4~u0zTb1by%2fwDe%2fdaHxdm6kRPWTo9kydObpMmc9bGyCh%2bq4N7ZXj9mkipoXCjsq5u5Gy6p%2flMICFrOzO6fs5LvyE7ShMkE8FSoLbaEbIG39HKUZFX5X6188GBetlk7MHQA16A1Hmx005dK97GCwMI%2b%2bs0Ko7o6KzkEi1mMnGrKaiVlfu%2fkdm9BOTq2O7Me%2fqzmWj3MRtvAbR9UPd%2b4FsHxA0U8ANEex43TeUj4FHlicETQ4S8vORv%2fYWYXztcwAny1kGE6kpWHmcrsYHu5aaL%2f9w5Sxwz4EM2fC4BGbz4wM0fw%2b6Xosq7Y2b%2fE2bUblFtaWPF99q8T3tbGKWk0%2fY6AdbCfj8vo8VtK3W%2bem9AShkh01qAJHIns4lQrZKYaPp649gkJzA9%2bdevNlZsY92zBm3Dto3ln4SCfcNX9%2bY5GPo7PkHsUCp9JFrSpEMFguCBlBd%2bz%2bZ%2bjy1W5Dr%2b2iOJlz9liVJ2pSllr%2fGMQ1z1CDjo%2fzPAE6PEBH8pnui7F36vuqEK7%2fwVk7rStao0y6b6p6PXbYrgaeEFEUIGys5Eik%2fWsJl%2bCnnqUuGtHzy6P0A%2blWIzERS0GFPDiK0cm648MUhk%2beKXS3EUiRDjc%2bQJg1Bru9zku2Hc8iQIcUN6J4vfvha%2f1MaDReC5ig3HL11dnRbeNK6MPwM%2bs97t5eAxSeIZbh0XuR9k0tk5RURf%2bx%2b7TFrvy8%2bvzXFwJNe1smwVSR1ixKEcHPkkRi3pBkuiK7ZdgkuRRNfW4plmokdi%2b7Mf4sQDfUp7zljfsZbJMTLhfgoPaW2FSrBW40hPY%2bJ9rCByvSeso4nb9Eyca%2f8SDykceKQlFbX%2bwicP2hVVRgQhoGdAM3IVYrESFd1Nmx7ZoAFgMlA5PQz9RDwigkHDlJDfjOOmxFsrjuLOC0%2bxv3Og62mr%2fTA2L%2bu1slSJfQ7x68slx7CUcwbBq885VjuhRkiCoVG1Ml1omTq5X9tV2sdVoieOnbOJxwuEZJ%2fi28tWBj%2f7Mv8nx51XytLMEzVg7dQUoUAbABhq5k%2f4LCDwz%2fDEFlfPdCJhUJbGWANzhQg5gNfUTDaJ%2f4lzYM8sFVmg2HnvCQo%2f4pgc3k5lLesW2H2Sv6YF6okCP40ke%2fOfpJqeXQRLV9wzGKLqZBZ%2fNoDj6R6NoHy0Z79T4%2bryAePJCj3QyHZcvalY5tIXrVBE%2fZAOG7tpENd9%2f1GfYnfDrg7Y47b6I9m3hZnIR7eJvgJ8Wnuj4NpZN3hR0KQQAg%2foPa3FlilHVy71LHAthmvWYB94GMWbT2MALzT4bDVAu6%2fKZeTuTnjh2X1yR67%2bdTeZrx1FRb3RQE68Tv4aTAwWAKwUG0QNewpg5koM2WcaJq7XKI3VmKTl4mhDIQRIBLTHU8uaPN2bBDQtM3qiia85GMEIAOi7GuG7ZR%2bN4bEDFP%2bPA5U%2fsFV7LFzP1eX0e7%2fhPAhToKtFAkU0hdIPDLchTv0yUxJJjHsFuEdyP%2f4%2b4HdZKAASzYqb%2fCUb8YXSKkxXoMHia3Mx2zieYylMCglW6YolrgJLEjWmyrRB7kp8Bg5qCeThC2i4Kook7S27I1kQKD5DVmLX3fH9aOQ0HCK2AorY2BldXSDuqwzHJZmYV2x%2bjJQUSIiUzD68aoPbOF4Omr2zpTYLHSJopPevBnh4YhT0PgRZjxHD%2bSLwLuNMMNGoGGNgGxjMmxZZBdpIWhzexe9nIvdCf5O%2fPs%2f6aB76p8%2f5KP9Sv49ddKNxSu7Am2GzVusLtveyisP1ziKeRCuNCIIVHwMRouNOGF4IzjbhHAMwwgxVexOsrrj%2fT3T%2fJidgOtJMrVQT8UrcwAU2wxOVKw%2b1M2cbGbrP0C1xHZWQ%2bdyLAetJSmpNfO4oDYQczltaOGKf2c0%2blCQPaDpeWbT3zR7z3M2UhT5Q%2flL19FmlhYclzm6CRkMufQYnBjo9TiQnKcWfHGvFopxPnPOiNvnWgxkeBdSmdHyZm8xYLwHtGuTw2jsUkIFnUNuGQke9vvCcpJBrj7tljgHC2LasHzNzc9l37nac%3d</cookies>
+      <method class="java.lang.String">POST</method>
+      <queryString class="java.lang.String">authn_try_count=0&amp;request_id=-9140035047928496018&amp;OAM_REQ=VERSION_4%7Eu0zTb1by%252fwDe%252fdaHxdm6kRPWTo9kydObpMmc9bGyCh%252bq4N7ZXj9mkipoXCjsq5u5Gy6p%252flMICFrOzO6fs5LvyE7ShMkE8FSoLbaEbIG39HKUZFX5X6188GBetlk7MHQA16A1Hmx005dK97GCwMI%252b%252bs0Ko7o6KzkEi1mMnGrKaiVlfu%252fkdm9BOTq2O7Me%252fqzmWj3MRtvAbR9UPd%252b4FsHxA0U8ANEex43TeUj4FHlicETQ4S8vORv%252fYWYXztcwAny1kGE6kpWHmcrsYHu5aaL%252f9w5Sxwz4EM2fC4BGbz4wM0fw%252b6Xosq7Y2b%252fE2bUblFtaWPF99q8T3tbGKWk0%252fY6AdbCfj8vo8VtK3W%252bem9AShkh01qAJHIns4lQrZKYaPp649gkJzA9%252bdevNlZsY92zBm3Dto3ln4SCfcNX9%252bY5GPo7PkHsUCp9JFrSpEMFguCBlBd%252bz%252bZ%252bjy1W5Dr%252b2iOJlz9liVJ2pSllr%252fGMQ1z1CDjo%252fzPAE6PEBH8pnui7F36vuqEK7%252fwVk7rStao0y6b6p6PXbYrgaeEFEUIGys5Eik%252fWsJl%252bCnnqUuGtHzy6P0A%252blWIzERS0GFPDiK0cm648MUhk%252beKXS3EUiRDjc%252bQJg1Bru9zku2Hc8iQIcUN6J4vfvha%252f1MaDReC5ig3HL11dnRbeNK6MPwM%252bs97t5eAxSeIZbh0XuR9k0tk5RURf%252bx%252b7TFrvy8%252bvzXFwJNe1smwVSR1ixKEcHPkkRi3pBkuiK7ZdgkuRRNfW4plmokdi%252b7Mf4sQDfUp7zljfsZbJMTLhfgoPaW2FSrBW40hPY%252bJ9rCByvSeso4nb9Eyca%252f8SDykceKQlFbX%252bwicP2hVVRgQhoGdAM3IVYrESFd1Nmx7ZoAFgMlA5PQz9RDwigkHDlJDfjOOmxFsrjuLOC0%252bxv3Og62mr%252fTA2L%252bu1slSJfQ7x68slx7CUcwbBq885VjuhRkiCoVG1Ml1omTq5X9tV2sdVoieOnbOJxwuEZJ%252fi28tWBj%252f7Mv8nx51XytLMEzVg7dQUoUAbABhq5k%252f4LCDwz%252fDEFlfPdCJhUJbGWANzhQg5gNfUTDaJ%252f4lzYM8sFVmg2HnvCQo%252f4pgc3k5lLesW2H2Sv6YF6okCP40ke%252fOfpJqeXQRLV9wzGKLqZBZ%252fNoDj6R6NoHy0Z79T4%252bryAePJCj3QyHZcvalY5tIXrVBE%252fZAOG7tpENd9%252f1GfYnfDrg7Y47b6I9m3hZnIR7eJvgJ8Wnuj4NpZN3hR0KQQAg%252foPa3FlilHVy71LHAthmvWYB94GMWbT2MALzT4bDVAu6%252fKZeTuTnjh2X1yR67%252bdTeZrx1FRb3RQE68Tv4aTAwWAKwUG0QNewpg5koM2WcaJq7XKI3VmKTl4mhDIQRIBLTHU8uaPN2bBDQtM3qiia85GMEIAOi7GuG7ZR%252bN4bEDFP%252bPA5U%252fsFV7LFzP1eX0e7%252fhPAhToKtFAkU0hdIPDLchTv0yUxJJjHsFuEdyP%252f4%252b4HdZKAASzYqb%252fCUb8YXSKkxXoMHia3Mx2zieYylMCglW6YolrgJLEjWmyrRB7kp8Bg5qCeThC2i4Kook7S27I1kQKD5DVmLX3fH9aOQ0HCK2AorY2BldXSDuqwzHJZmYV2x%252bjJQUSIiUzD68aoPbOF4Omr2zpTYLHSJopPevBnh4YhT0PgRZjxHD%252bSLwLuNMMNGoGGNgGxjMmxZZBdpIWhzexe9nIvdCf5O%252fPs%252f6aB76p8%252f5KP9Sv49ddKNxSu7Am2GzVusLtveyisP1ziKeRCuNCIIVHwMRouNOGF4IzjbhHAMwwgxVexOsrrj%252fT3T%252fJidgOtJMrVQT8UrcwAU2wxOVKw%252b1M2cbGbrP0C1xHZWQ%252bdyLAetJSmpNfO4oDYQczltaOGKf2c0%252blCQPaDpeWbT3zR7z3M2UhT5Q%252flL19FmlhYclzm6CRkMufQYnBjo9TiQnKcWfHGvFopxPnPOiNvnWgxkeBdSmdHyZm8xYLwHtGuTw2jsUkIFnUNuGQke9vvCcpJBrj7tljgHC2LasHzNzc9l37nac%253d&amp;locale=en_US</queryString>
+    </httpSample>
+  </sample>
+</sample>
+<sample t="11228" it="8" lt="0" ts="1380142110311" s="true" lb="ST03_COUK_Click_LoginNOW" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="89260" ng="1" na="1">
+  <sample t="1375" it="4" lt="0" ts="1380142110311" s="true" lb="/oam/server/auth_cred_submit (extract cookie from header)" rc="200" rm="Number of samples in transaction : 4, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="41381" ng="1" na="1">
+    <httpSample t="483" it="0" lt="482" ts="1380142110312" s="true" lb="/oam/server/auth_cred_submit" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="text" by="14793" ng="1" na="1">
+      <sample t="0" it="0" lt="0" ts="1380142110795" s="true" lb="COOKIE_1 = AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB%20redirectto=%2Fmyvodafone%2FadfAuthentication%3Fsuccess_url%3D%2Ffaces%2Fhome%26_afrLoop%3D233162490651000%20ssoCookie=Secure%3Bhttponly" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="12767" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_REQ=VERSION_4~u0zTb1by%2fwDe%2fdaHxdm6kRPWTo9kydObpMmc9bGyCh%2bq4N7ZXj9mkipoXCjsq5u5Gy6p%2flMICFrOzO6fs5LvyE7ShMkE8FSoLbaEbIG39HKUZFX5X6188GBetlk7MHQA16A1Hmx005dK97GCwMI%2b%2bs0Ko7o6KzkEi1mMnGrKaiVlfu%2fkdm9BOTq2O7Me%2fqzmWj3MRtvAbR9UPd%2b4FsHxA0U8ANEex43TeUj4FHlicETQ4S8vORv%2fYWYXztcwAny1kGE6kpWHmcrsYHu5aaL%2f9w5Sxwz4EM2fC4BGbz4wM0fw%2b6Xosq7Y2b%2fE2bUblFtaWPF99q8T3tbGKWk0%2fY6AdbCfj8vo8VtK3W%2bem9AShkh01qAJHIns4lQrZKYaPp649gkJzA9%2bdevNlZsY92zBm3Dto3ln4SCfcNX9%2bY5GPo7PkHsUCp9JFrSpEMFguCBlBd%2bz%2bZ%2bjy1W5Dr%2b2iOJlz9liVJ2pSllr%2fGMQ1z1CDjo%2fzPAE6PEBH8pnui7F36vuqEK7%2fwVk7rStao0y6b6p6PXbYrgaeEFEUIGys5Eik%2fWsJl%2bCnnqUuGtHzy6P0A%2blWIzERS0GFPDiK0cm648MUhk%2beKXS3EUiRDjc%2bQJg1Bru9zku2Hc8iQIcUN6J4vfvha%2f1MaDReC5ig3HL11dnRbeNK6MPwM%2bs97t5eAxSeIZbh0XuR9k0tk5RURf%2bx%2b7TFrvy8%2bvzXFwJNe1smwVSR1ixKEcHPkkRi3pBkuiK7ZdgkuRRNfW4plmokdi%2b7Mf4sQDfUp7zljfsZbJMTLhfgoPaW2FSrBW40hPY%2bJ9rCByvSeso4nb9Eyca%2f8SDykceKQlFbX%2bwicP2hVVRgQhoGdAM3IVYrESFd1Nmx7ZoAFgMlA5PQz9RDwigkHDlJDfjOOmxFsrjuLOC0%2bxv3Og62mr%2fTA2L%2bu1slSJfQ7x68slx7CUcwbBq885VjuhRkiCoVG1Ml1omTq5X9tV2sdVoieOnbOJxwuEZJ%2fi28tWBj%2f7Mv8nx51XytLMEzVg7dQUoUAbABhq5k%2f4LCDwz%2fDEFlfPdCJhUJbGWANzhQg5gNfUTDaJ%2f4lzYM8sFVmg2HnvCQo%2f4pgc3k5lLesW2H2Sv6YF6okCP40ke%2fOfpJqeXQRLV9wzGKLqZBZ%2fNoDj6R6NoHy0Z79T4%2bryAePJCj3QyHZcvalY5tIXrVBE%2fZAOG7tpENd9%2f1GfYnfDrg7Y47b6I9m3hZnIR7eJvgJ8Wnuj4NpZN3hR0KQQAg%2foPa3FlilHVy71LHAthmvWYB94GMWbT2MALzT4bDVAu6%2fKZeTuTnjh2X1yR67%2bdTeZrx1FRb3RQE68Tv4aTAwWAKwUG0QNewpg5koM2WcaJq7XKI3VmKTl4mhDIQRIBLTHU8uaPN2bBDQtM3qiia85GMEIAOi7GuG7ZR%2bN4bEDFP%2bPA5U%2fsFV7LFzP1eX0e7%2fhPAhToKtFAkU0hdIPDLchTv0yUxJJjHsFuEdyP%2f4%2b4HdZKAASzYqb%2fCUb8YXSKkxXoMHia3Mx2zieYylMCglW6YolrgJLEjWmyrRB7kp8Bg5qCeThC2i4Kook7S27I1kQKD5DVmLX3fH9aOQ0HCK2AorY2BldXSDuqwzHJZmYV2x%2bjJQUSIiUzD68aoPbOF4Omr2zpTYLHSJopPevBnh4YhT0PgRZjxHD%2bSLwLuNMMNGoGGNgGxjMmxZZBdpIWhzexe9nIvdCf5O%2fPs%2f6aB76p8%2f5KP9Sv49ddKNxSu7Am2GzVusLtveyisP1ziKeRCuNCIIVHwMRouNOGF4IzjbhHAMwwgxVexOsrrj%2fT3T%2fJidgOtJMrVQT8UrcwAU2wxOVKw%2b1M2cbGbrP0C1xHZWQ%2bdyLAetJSmpNfO4oDYQczltaOGKf2c0%2blCQPaDpeWbT3zR7z3M2UhT5Q%2flL19FmlhYclzm6CRkMufQYnBjo9TiQnKcWfHGvFopxPnPOiNvnWgxkeBdSmdHyZm8xYLwHtGuTw2jsUkIFnUNuGQke9vvCcpJBrj7tljgHC2LasHzNzc9l37nac%3d</cookies>
+      <method class="java.lang.String">POST</method>
+      <queryString class="java.lang.String">searchQuery=Search&amp;username=SDPAT01&amp;password=Password1&amp;OAM_REQ=VERSION_4%7Eu0zTb1by%2FwDe%2FdaHxdm6kRPWTo9kydObpMmc9bGyCh%2Bq4N7ZXj9mkipoXCjsq5u5Gy6p%2FlMICFrOzO6fs5LvyE7ShMkE8FSoLbaEbIG39HKUZFX5X6188GBetlk7MHQA16A1Hmx005dK97GCwMI%2B%2Bs0Ko7o6KzkEi1mMnGrKaiVlfu%2Fkdm9BOTq2O7Me%2FqzmWj3MRtvAbR9UPd%2B4FsHxA0U8ANEex43TeUj4FHlicETQ4S8vORv%2FYWYXztcwAny1kGE6kpWHmcrsYHu5aaL%2F9w5Sxwz4EM2fC4BGbz4wM0fw%2B6Xosq7Y2b%2FE2bUblFtaWPF99q8T3tbGKWk0%2FY6AdbCfj8vo8VtK3W%2Bem9AShkh01qAJHIns4lQrZKYaPp649gkJzA9%2BdevNlZsY92zBm3Dto3ln4SCfcNX9%2BY5GPo7PkHsUCp9JFrSpEMFguCBlBd%2Bz%2BZ%2Bjy1W5Dr%2B2iOJlz9liVJ2pSllr%2FGMQ1z1CDjo%2FzPAE6PEBH8pnui7F36vuqEK7%2FwVk7rStao0y6b6p6PXbYrgaeEFEUIGys5Eik%2FWsJl%2BCnnqUuGtHzy6P0A%2BlWIzERS0GFPDiK0cm648MUhk%2BeKXS3EUiRDjc%2BQJg1Bru9zku2Hc8iQIcUN6J4vfvha%2F1MaDReC5ig3HL11dnRbeNK6MPwM%2Bs97t5eAxSeIZbh0XuR9k0tk5RURf%2Bx%2B7TFrvy8%2BvzXFwJNe1smwVSR1ixKEcHPkkRi3pBkuiK7ZdgkuRRNfW4plmokdi%2B7Mf4sQDfUp7zljfsZbJMTLhfgoPaW2FSrBW40hPY%2BJ9rCByvSeso4nb9Eyca%2F8SDykceKQlFbX%2BwicP2hVVRgQhoGdAM3IVYrESFd1Nmx7ZoAFgMlA5PQz9RDwigkHDlJDfjOOmxFsrjuLOC0%2Bxv3Og62mr%2FTA2L%2Bu1slSJfQ7x68slx7CUcwbBq885VjuhRkiCoVG1Ml1omTq5X9tV2sdVoieOnbOJxwuEZJ%2Fi28tWBj%2F7Mv8nx51XytLMEzVg7dQUoUAbABhq5k%2F4LCDwz%2FDEFlfPdCJhUJbGWANzhQg5gNfUTDaJ%2F4lzYM8sFVmg2HnvCQo%2F4pgc3k5lLesW2H2Sv6YF6okCP40ke%2FOfpJqeXQRLV9wzGKLqZBZ%2FNoDj6R6NoHy0Z79T4%2BryAePJCj3QyHZcvalY5tIXrVBE%2FZAOG7tpENd9%2F1GfYnfDrg7Y47b6I9m3hZnIR7eJvgJ8Wnuj4NpZN3hR0KQQAg%2FoPa3FlilHVy71LHAthmvWYB94GMWbT2MALzT4bDVAu6%2FKZeTuTnjh2X1yR67%2BdTeZrx1FRb3RQE68Tv4aTAwWAKwUG0QNewpg5koM2WcaJq7XKI3VmKTl4mhDIQRIBLTHU8uaPN2bBDQtM3qiia85GMEIAOi7GuG7ZR%2BN4bEDFP%2BPA5U%2FsFV7LFzP1eX0e7%2FhPAhToKtFAkU0hdIPDLchTv0yUxJJjHsFuEdyP%2F4%2B4HdZKAASzYqb%2FCUb8YXSKkxXoMHia3Mx2zieYylMCglW6YolrgJLEjWmyrRB7kp8Bg5qCeThC2i4Kook7S27I1kQKD5DVmLX3fH9aOQ0HCK2AorY2BldXSDuqwzHJZmYV2x%2BjJQUSIiUzD68aoPbOF4Omr2zpTYLHSJopPevBnh4YhT0PgRZjxHD%2BSLwLuNMMNGoGGNgGxjMmxZZBdpIWhzexe9nIvdCf5O%2FPs%2F6aB76p8%2F5KP9Sv49ddKNxSu7Am2GzVusLtveyisP1ziKeRCuNCIIVHwMRouNOGF4IzjbhHAMwwgxVexOsrrj%2FT3T%2FJidgOtJMrVQT8UrcwAU2wxOVKw%2B1M2cbGbrP0C1xHZWQ%2BdyLAetJSmpNfO4oDYQczltaOGKf2c0%2BlCQPaDpeWbT3zR7z3M2UhT5Q%2FlL19FmlhYclzm6CRkMufQYnBjo9TiQnKcWfHGvFopxPnPOiNvnWgxkeBdSmdHyZm8xYLwHtGuTw2jsUkIFnUNuGQke9vvCcpJBrj7tljgHC2LasHzNzc9l37nac%3D&amp;org.apache.myfaces.trinidad.faces.FORM=f1&amp;javax.faces.ViewState=%212xw079g2z</queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/obrar.cgi?cookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB%20redirectto=%2Fmyvodafone%2FadfAuthentication%3Fsuccess_url%3D%2Ffaces%2Fhome%26_afrLoop%3D233162490651000%20ssoCookie=Secure%3Bhttponly</redirectLocation>
+    </httpSample>
+    <httpSample t="60" it="0" lt="59" ts="1380142110796" s="true" lb="/obrar.cgi" rc="302" rm="Found" tn="Thread Group - Prepay 1-1" dt="text" by="12103" ng="1" na="1">
+      <sample t="0" it="0" lt="0" ts="1380142110856" s="true" lb="AFR_LOOP_3 = 233162490651000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11061" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; ObSSOCookie=UQh3zVVklRE4L9qIyWcsJXbxXRvT4hK5iTUeGlbwoAhiAMCPpuo1d9cgKfBqRJSI0G9c%2BhuR%2FXEbCz17Xn5BtrIPar5In8mYgcF6dxqsCLbepoMqZQiJuoZjI4MRuZJASoHuddwFD3QDkCprdazfq3aZ%2BxhrVV0q4fH7jm7xPbgotSPuCWLxOmusYzTPCwgVL47%2BfY2oJceaGF%2FLH%2F87rKoFcNFo%2FTARu4ktU7omkHMCAc5CBYkVvPYmS%2FKbrpYm; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">/myvodafone/adfAuthentication?success_url=/faces/home&amp;_afrLoop=233162490651000</redirectLocation>
+    </httpSample>
+    <httpSample t="652" it="0" lt="651" ts="1380142110857" s="true" lb="/myvodafone/adfAuthentication" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="text" by="986" ng="1" na="1">
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; VFCOOKIE=6Q1tSDMdrfQHypTpGjvYVCGrNhzdxLQWFtVvYCfhMYRtG2MtBJ1S!-1538056356; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/myvodafone/faces/home</redirectLocation>
+    </httpSample>
+    <httpSample t="180" it="0" lt="133" ts="1380142111510" s="true" lb="/myvodafone/faces/home" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="13499" ng="1" na="1">
+      <sample t="1" it="0" lt="0" ts="1380142111689" s="true" lb="AFR_LOOP_4 = 233164772470000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="10664" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+  <sample t="3608" it="1" lt="0" ts="1380142111690" s="true" lb="/myvodafone/faces/home" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="45637" ng="1" na="1">
+    <httpSample t="3608" it="0" lt="3505" ts="1380142111691" s="true" lb="/myvodafone/faces/home" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="45637" ng="1" na="1">
+      <assertionResult>
+        <name>Response Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <sample t="0" it="0" lt="0" ts="1380142115297" s="true" lb="JSF_VIEW_STATE_2= !2xw079g30" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="10901" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <sample t="1" it="0" lt="0" ts="1380142115297" s="true" lb="AFR_LOOP_5 = 233164772470000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11013" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <sample t="1" it="0" lt="0" ts="1380142115298" s="true" lb="WINDOWID_2 = w3kpetosg_23" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11141" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+  <sample t="6245" it="3" lt="0" ts="1380142115299" s="true" lb="/myvodafone/faces/home?_adf.ctrl-state=w3kpetosg_9" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="2242" ng="1" na="1">
+    <httpSample t="6245" it="0" lt="6245" ts="1380142115300" s="true" lb="/myvodafone/faces/home?_adf.ctrl-state=w3kpetosg_9" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="2242" ng="1" na="1">
+      <assertionResult>
+        <name>Response Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">POST</method>
+      <queryString class="java.lang.String">searchQuery=Search&amp;top-search=&amp;pt1%3Apt_r1%3A0%3Aproxy=proxy&amp;pt1%3Apt_r1%3A0%3Aselectmenu=0&amp;org.apache.myfaces.trinidad.faces.FORM=f1&amp;javax.faces.ViewState=%212xw079g30&amp;event=d1&amp;event.d1=%3Cm+xmlns%3D%22http%3A%2F%2Foracle.com%2FrichClient%2Fcomm%22%3E%3Ck+v%3D%22_custom%22%3E%3Cb%3E1%3C%2Fb%3E%3C%2Fk%3E%3Ck+v%3D%22immediate%22%3E%3Cb%3E1%3C%2Fb%3E%3C%2Fk%3E%3Ck+v%3D%22type%22%3E%3Cs%3EbalanceChecker_onloadEvent%3C%2Fs%3E%3C%2Fk%3E%3C%2Fm%3E&amp;oracle.adf.view.rich.PROCESS=d1</queryString>
+    </httpSample>
+  </sample>
+</sample>
+<sample t="801" it="6" lt="0" ts="1380142121549" s="true" lb="ST07_COUK_Logout" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="41315" ng="1" na="1">
+  <sample t="801" it="6" lt="0" ts="1380142121549" s="true" lb="/myvodafone/newCoLogoutServlet" rc="200" rm="Number of samples in transaction : 5, number of failing samples : 0" tn="Thread Group - Prepay 1-1" dt="" by="41315" ng="1" na="1">
+    <httpSample t="123" it="0" lt="123" ts="1380142121550" s="true" lb="/myvodafone/newCoLogoutServlet" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="text" by="835" ng="1" na="1">
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/oam/server/logout?end_url=https://www.vodafone.co.uk/myvodafone/VFLogoutServlet</redirectLocation>
+    </httpSample>
+    <httpSample t="95" it="0" lt="95" ts="1380142121674" s="true" lb="/oam/server/logout" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="1275" ng="1" na="1">
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_ID=VERSION_4~XsZHyiiOQfnVgZKnnT0fAw==~1NpTGPzWfsUHcuMvaMpGZ7SaIDYiG0x9UTUduVzPRNWRKtvYKfKzR1DHWZh2PwTikmC8S0TsoP3o694eSds/SIymPTcXrNXLWMmpxeD76bCUUWUYVsDM3/W1ThV/j+mSzlRSL+g+0Dv4nsu2vei9SAb+ZpS40c/v84+hyHeRWTrVWhtq3ptyKdkuLA8uUCnaVlK01htl4hvAj7lvbA7p8/9LF+BccdfEzwAUZzmewBL8FsKD0kf7CA5elZV3h4qYxjwq+VKuIKRXoGLkmPtifSy3BeIgS+nGIZYvphzGq60=; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="100" it="0" lt="98" ts="1380142121771" s="true" lb="/myvodafone/VFLogoutServlet" rc="302" rm="Moved Temporarily" tn="Thread Group - Prepay 1-1" dt="text" by="12293" ng="1" na="1">
+      <sample t="0" it="0" lt="0" ts="1380142121871" s="true" lb="SC_CONTEXT = AUKWFDFXDCDUBL023271" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11276" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; MigrationStatusCookie=NEWCOCREATED</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+      <redirectLocation class="java.lang.String">https://www.vodafone.co.uk/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page3.jspx?SC_CONTEXT=AUKWFDFXDCDUBL023271</redirectLocation>
+    </httpSample>
+    <httpSample t="115" it="0" lt="111" ts="1380142121872" s="true" lb="/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page3.jspx" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="14680" ng="1" na="1">
+      <sample t="1" it="0" lt="0" ts="1380142121986" s="true" lb="AFR_LOOP_LOGOUT = 233175109542000" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="11520" ng="0" na="0">
+        <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+      </sample>
+      <cookies class="java.lang.String">RFTUFlowCookie=RFTUCookie; L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_REQ=invalid; ObSSOCookie=AeX4i%2FMbxofZAurzAKzOAvTA9tMEmNzhpekgyULPhIpRVVC0OWkhUXtazxsu3nLvzvxX55CKsUeVTsOGTr6WjDFPtze4JrUfvCuNNMSfERxG00rmu8VxsGuZtsIT%2FcNmbTMQhLkQqQc2WX7QkOgkFol2QXvDcNXQS9ePjBuQSGLPFbeodNGQp2mP4t7PnYREwvu8a23gLgOsxCYHC3VWIzqW1RLdLVyyUa5JIL96oR5kp2oos50BqIaphBLdYyHbZgTT%2F2ghcBSNPI%2Ff2N4qvju7gxWveeinDIjhrX89JGPASFwrH%2FVdfGTpRL8NM%2BnGBUPoPqaONjbRs18SwK%2FVGALkrSXSQ3OU0g4yIWlObZ9AsSgasagvT6NJ9ksuODKB; VFCOOKIE=L7QTSDMfrJVwyFXvwqFS2Mmh5GvDhvqp2tnlTGTgVwfMt5VQ8F1v!-1538056356; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+    <httpSample t="368" it="0" lt="269" ts="1380142121987" s="true" lb="/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page3.jspx" rc="200" rm="OK" tn="Thread Group - Prepay 1-1" dt="text" by="12232" ng="1" na="1">
+      <assertionResult>
+        <name>Response Assertion</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <cookies class="java.lang.String">RFTUFlowCookie=RFTUCookie; L_WWW_LB=R4010426210; P2W-L-WWW-LB=R163524811; JSESSIONID=pmH9SDMXDY04N7FKn7D0q1QV9PZ4Xtj5pPT9yYGvfT6ZyBhlRx0Q!-1643891166!-42103197; s_vi=[CS]v1|2921A60E053091A2-40000303C0183C33[CE]; OAM_REQ=invalid; _WL_AUTHCOOKIE_VFCOOKIE=WY13eLtNqqhEVB89ys9j; ObSSOCookie=p1gTP5WLdLEPCPa8fxym9t%2BK6%2B8qaNlLQpoxhi%2F83Q3KAu6%2FNdN4FYsN7Drp7UAerviSmqIxpjF8Dede2zTS1MI06c0pFGPh8fdMHvRtJM2vXrttYi%2BZHw3RpMjl1aLVaqEMGrt9q5Ndrqy0mH0QnESr0xRAhHkc4JdWv4n4W%2ByRTr5umW8BOUdK738mrelxoeRqFx8Trq0WdJUV%2F9w%2BPb5O9Msr5R1xfD8rKbj9kHzE8TmMckw5GhxfEg2mhsBi; VFCOOKIE=ctB8SDMK7jFyFZt2Gn2xd81x181sqMDhnjq2hDrwX23Mmlfrfyyz!-1538056356</cookies>
+      <method class="java.lang.String">GET</method>
+      <queryString class="java.lang.String"></queryString>
+    </httpSample>
+  </sample>
+</sample>
+
+</testResults>

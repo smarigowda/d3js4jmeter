@@ -1,0 +1,14 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount
+1378630394769,4407,01_Home_Page,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,355412,1,1,0,1,0
+1378630399221,4672,02_Click_Login,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,87032,1,1,0,1,0
+1378630403904,34876,03_Login_NOW,200,"Number of samples in transaction : 9, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,464153,1,1,0,1,0
+1378630438807,9732,04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,63884,1,1,0,1,0
+1378630448543,11746,05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,109680,1,1,0,1,0
+1378630460297,3951,06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,50112,1,1,0,1,0
+1378630464251,5163,04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,63884,1,1,0,1,0
+1378630469416,10166,05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,109680,1,1,0,1,0
+1378630479591,3094,06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,50112,1,1,0,1,0
+1378630482687,4953,04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,63884,1,1,0,1,0
+1378630487643,10228,05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,109680,1,1,0,1,0
+1378630497879,3512,06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,50112,1,1,0,1,0
+1378630501395,8956,07_Click_Logout,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,45277,1,1,0,1,0

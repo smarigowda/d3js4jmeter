@@ -1,0 +1,7 @@
+1378629657054,3797,01_Home_Page,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,355398,0
+1378629661171,1766,02_Click_Login,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,86200,0
+1378629662955,33097,03_Login_NOW,200,"Number of samples in transaction : 9, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,463781,0
+1378629696082,8096,04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,63884,0
+1378629704182,10214,05_Click_My_Account,,"Number of samples in transaction : 3, number of failing samples : 1",Thread Group - Pay Monthly 1-1,,false,109680,0
+1378629714410,4159,06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,50112,0
+1378629718579,1339,07_Click_Logout,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,46218,0

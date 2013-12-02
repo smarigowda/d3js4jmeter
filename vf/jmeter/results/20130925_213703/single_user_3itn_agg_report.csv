@@ -1,0 +1,4 @@
+1380141423956,5361,ST01_COUK_LandingPage,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,76283,0
+1380141429401,1288,ST02_COUK_Click_Login,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group - Prepay 1-1,,true,81614,0
+1380141430706,10474,ST03_COUK_Click_LoginNOW,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Prepay 1-1,,true,88571,0
+1380141441194,456,ST07_COUK_Logout,,"Number of samples in transaction : 1, number of failing samples : 1",Thread Group - Prepay 1-1,,false,30072,0

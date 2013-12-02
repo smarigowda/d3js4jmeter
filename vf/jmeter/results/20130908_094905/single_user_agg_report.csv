@@ -1,0 +1,8 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,bytes,grpThreads,allThreads,Latency,SampleCount,ErrorCount
+1378630146026,3777,01_Home_Page,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,355468,1,1,0,1,0
+1378630149857,2446,02_Click_Login,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,86462,1,1,0,1,0
+1378630152313,28512,03_Login_NOW,200,"Number of samples in transaction : 9, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,463889,1,1,0,1,0
+1378630180846,7882,04_Click_Manage_My_Settings,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,63884,1,1,0,1,0
+1378630188733,10841,05_Click_My_Account,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,109680,1,1,0,1,0
+1378630199586,4868,06_Click_Manage_My_Details,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,50112,1,1,0,1,0
+1378630204459,1616,07_Click_Logout,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group - Pay Monthly 1-1,,true,45201,1,1,0,1,0
