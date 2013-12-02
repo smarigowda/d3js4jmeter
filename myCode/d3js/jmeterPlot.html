@@ -53,14 +53,10 @@ var apdexTable = [ ];
 var d3jsentries;
 var gdata;
 
-// get the file name from URL
-// aggregate_report3.csv
-// var file_name = GetUrlValue('file_name');
-// var folder_name = GetUrlValue('folder_name');
-var file_name = '01112013_TEST_1_STU_AND_TEACHR_200TCHR_810STU_all_filt_consolidated.csv';
-var folder_name = 'gedu_OCT2013';
-
+var file_name = 'aggregate_filtered.csv';
+var folder_name = 'iml_Nov2013/29112013_145001_BASELINE_50TCHR_500STU';
 d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
+
 		console.log('csv data read');
         
 
@@ -156,9 +152,14 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-x.domain(groupbyLabel.map(function(d) { return d.key; })); // domain is the label for x axis
+// filter groupbyLabel
+// filt_groupbyLable = _.filter(groupbyLabel, function(d) { return d.values.percentile < 30000 });
 
-y.domain([0, d3.max(groupbyLabel, function(d) { return +d.values.percentile; })]);
+filt_groupbyLable = groupbyLabel;
+
+x.domain(filt_groupbyLable.map(function(d) { return d.key; })); // domain is the label for x axis
+
+y.domain([0, d3.max(filt_groupbyLable, function(d) { return +d.values.percentile; })]);
 
     svg.append("g")
       .attr("class", "x axis")
@@ -188,7 +189,6 @@ svg.selectAll(".x.axis text")  // select all the text elements for the xaxis
 		    return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(-90)";
 		    //console.log(this.getBBox());
             //return "translate(" + this.getBBox().height*-1.0 + "," + this.getBBox().height + ")rotate(0)";
-
 	});
 
 svg.append("g")
@@ -204,7 +204,7 @@ svg.append("g")
     //   .attr("font-size", 12);
 
 svg.selectAll(".bar")
-      .data(groupbyLabel)
+      .data(filt_groupbyLable)
     .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d) { return x(d.key); })
@@ -218,19 +218,5 @@ svg.selectAll(".bar")
                                     '| Throughput = ', d.values.throughput.toFixed(2)].join(" ");});
 
 });
-
-
-// A function to get the value of a key from the URL query string
-function GetUrlValue(VarSearch){
-    var SearchString = window.location.search.substring(1);
-    var VariableArray = SearchString.split('&');
-    // loop through each of the URL parameters, split and check
-    for(var i = 0; i < VariableArray.length; i++){
-        var KeyValuePair = VariableArray[i].split('=');
-        if(KeyValuePair[0] == VarSearch){
-            return KeyValuePair[1];
-        }
-    }
-}
 
 </script>

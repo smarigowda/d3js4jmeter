@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+</html>
+<meta charset="utf-8">
+
+<style>
+
+rect:hover {
+        fill: orange;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.grid .tick {
+    stroke: lightgrey; opacity: 0.7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+</style>
+
+<body ng-app="myApp">
+<script src="../../js/d3.v3.min.js"></script>
+<script src="../../js/underscore.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../ngapp/myApp.js"></script>
+<div><h1>TG NAME, Start Time, End Time, Duration in Min</h1></div>
+<h1>50:500 Load</h1>
+<div fundoo-rating folder-name="iml_Nov2013/29112013_145001_BASELINE_50TCHR_500STU" file_name="tg_startend_report.txt"></div>
+<h1>6:180 Load</h1>
+<div fundoo-rating folder-name="iml_Nov2013/28112013_030001_BASELINE_6TCHR_180STU" file_name="tg_startend_report.txt"></div>
+
+
+</body>
