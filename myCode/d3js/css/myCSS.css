@@ -1,0 +1,30 @@
+rect:hover {
+        fill: orange;
+}
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.grid .tick {
+    stroke: lightgrey; opacity: 0.7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
