@@ -1,10 +1,10 @@
-<div ng-repeat="record in tgreport" folder_name="DUMMY_FOLDER">
+<div ng-repeat="record in tgreport">
     <h2>
-      {{ record.tg_name }}, 
+      {{ record.tg_name }},
       <!-- {{ record.strStartTime | date:'yyyy-MM-dd HH:mm:ss Z' }},  -->
-      {{ record.strStartTime | date:'HH:mm:ss' }}, 
+      {{ record.strStartTime | date:'HH:mm:ss' }},
       <!-- {{ record.strEndTime | date:'yyyy-MM-dd HH:mm:ss Z'}},  -->
-      {{ record.strEndTime | date:'HH:mm:ss'}}, 
-      {{ record.duration }}
+      {{ record.strEndTime | date:'HH:mm:ss'}},
+      <font color="blue">{{ record.duration }} Min</font>
     </h2>
 </div>
