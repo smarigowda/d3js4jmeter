@@ -24,8 +24,11 @@ var results;
 
 // get the file name from URL
 // aggregate_report3.csv
-var file_name = GetUrlValue('file_name');
-var folder_name = GetUrlValue('folder_name');
+// var file_name = GetUrlValue('file_name');
+// var folder_name = GetUrlValue('folder_name');
+
+var file_name = '20122013_111001_view_results_tree_1_1_200.xml';
+var folder_name = 'jtl';
 d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
 	
 		console.log('data read');
@@ -56,32 +59,25 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
 		
 		xml3array = _.map(results3, function(d) { return d.attributes; } )
 		
-		xml3array_1 = xml3array.filter(function(d) { return d.lb.nodeValue.match(/^ST.*/)}) // Each object needs to be accesses individually using map. This is a very imp step.
+		xml3array_1 = xml3array.filter(function(d) { return d.lb.nodeValue.match(/^S0.*/)}) // Each object needs to be accesses individually using map. This is a very imp step.
 		
         
         xml2array = _.map(results2, function(d) { return d } ) // this convers from xml to JavaScript Array Object
         
-        results = _.filter(results2, function(d) {return d.attributes.t.value > 2500}) // nested array of objects, JSON
+        results = _.filter(results2, function(d) {return d.attributes.t.value > 25000}) // nested array of objects, JSON
          
-        d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; })
+        d3.select("body").selectAll("p")
+            .data(results).enter()
+                .append("p")
+                .text(function(d,i) {
+                    /*console.log(d.attributes.lb.value);*/ 
+                    return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; 
+                })
+                .append("font").text(function(d,i) { return '........' + d.attributes.t.value + ' msec' }).attr("color", "red");
         
         //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.t.value; })
         
         
 });
-
-
-// A function to get the value of a key from the URL query string
-function GetUrlValue(VarSearch){
-    var SearchString = window.location.search.substring(1);
-    var VariableArray = SearchString.split('&');
-    // loop through each of the URL parameters, split and check
-    for(var i = 0; i < VariableArray.length; i++){
-        var KeyValuePair = VariableArray[i].split('=');
-        if(KeyValuePair[0] == VarSearch){
-            return KeyValuePair[1];
-        }
-    }
-}
 
 </script>
