@@ -77,6 +77,7 @@ d3.csv("./data/".concat(folder_name, "/", file_name), function(data) {
     //convert to numeric
     data.map(function(d) { d.timeStamp = +d.timeStamp });
     // to roundup time to its nearest x sec
+    // ex: roundup time to its nearest 5 sec
     var coeff = 1000 * 5;
     data.map(function(d) { d.timeStamp2 = Math.round(+d.timeStamp/coeff) * coeff });
         

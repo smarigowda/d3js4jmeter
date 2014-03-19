@@ -12,8 +12,8 @@
 <meta charset="utf-8">
 
 <body>
-<script src="d3js4jmeter/js/d3.v3.min.js"></script>
-<script src="d3js4jmeter/js/underscore.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/underscore.js"></script>
 
 <!-- <script src="../../crossfilter/crossfilter.js"></script> -->
 
@@ -73,7 +73,8 @@ d3.xml("./data/".concat(folder_name, "/", file_name), function(data) {
                     /*console.log(d.attributes.lb.value);*/ 
                     return d.attributes.lb.value + ' - ' + d.attributes.t.value + ' msec'; 
                 })
-                .append("font").text(function(d,i) { return '........' + d.attributes.t.value + ' msec' }).attr("color", "red");
+                .append("font").text(function(d,i) { return '...LOAD TIME.....' + d.attributes.t.value + ' msec' }).attr("color", "red")
+                .append("font").text(function(d,i) { return '...LATENCY .....' + d.attributes.lt.value + ' msec' }).attr("color", "blue");
         
         //d3.select("body").selectAll("p").data(results).enter().append("p").text(function(d,i) { /*console.log(d.attributes.lb.value);*/ return d.attributes.t.value; })
         

@@ -157,8 +157,7 @@ var svg = d3.select("body").append("svg")
 
 filt_groupbyLable = groupbyLabel;
 
-x.domain(filt_groupbyLable.map(function(d) { return d.key; })); // domain is the label for x axis
-
+x.domain(filt_groupbyLable.map(function(d) { return d.key; })); // label for x axis
 y.domain([0, d3.max(filt_groupbyLable, function(d) { return +d.values.percentile; })]);
 
     svg.append("g")
